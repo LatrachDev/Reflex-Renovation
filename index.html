@@ -16,6 +16,12 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
   <style>
     .fira {
       font-family: "Fira Sans", sans-serif;
@@ -30,6 +36,38 @@
 
     body {
       background-color: #FBF3F2;
+    }
+
+    .swiper-wrapper {
+      width: 100%;
+      height: max-content !important;
+      padding-bottom: 64px !important;
+      -webkit-transition-timing-function: linear !important;
+      transition-timing-function: linear !important;
+      position: relative;
+    }
+
+    .swiper-slide .overlay {
+      transform: translateY(100%);
+      transition: transform 0.3s ease-in-out;
+      opacity: 0;
+    }
+    
+    .swiper-slide:hover .overlay {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    
+    /* Remove default Swiper button arrows */
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      display: none;
+    }
+    
+    /* Styling for disabled navigation buttons */
+    .disabled_swiper_button {
+      opacity: 0.5;
+      cursor: not-allowed;
     }
   </style>
 </head>
@@ -353,44 +391,123 @@
   </section>
   <!-- Realizations Section -->
   <section class="py-12 bg-[#032539] text-white text-center">
-    <div class="container mx-auto px-6">
-      <h2 class="text-2xl font-bold fira text-center text-[#FA991C]">
-        Nos Réalisations
-      </h2>
-      <p class="mt-4 text-center">
-        Grâce à un interlocuteur unique, vous bénéficiez d’un échange fluide et transparent
-      </p>
-      <div class="mt-6 flex space-x-4 overflow-x-auto">
-        <div class="flex-shrink-0 w-64">
-          <img alt="Realization 1" class="w-full h-auto object-cover" height="200"
-            src="https://storage.googleapis.com/a1aa/image/Fb8Sz40a_aGPVxB3O3y9FNAPeNSnXEYc4bqqtyvvhWI.jpg" width="300">
-          <p class="mt-2 text-center">
-            Création Garage en Bois à Montmartre
-          </p>
+
+
+    <div class="m-10 relative">
+      <h1 class="text-3xl font-bold fira mb-10">NOS REALISATIONS</h1>
+      <p class="mb-10">GRÂCE À UN INTERLOCUTEUR UNIQUE, VOUS BÉNÉFICIEZ D'UN ÉCHANGE FLUIDE ET TRANSPARENT</p>
+      <div class="swiper multiple-slide-carousel swiper-container relative ">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide flex justify-center items-center">
+            <div class="relative">
+              <img alt="Interior renovation with yellow wall and painting supplies" class="w-72 h-96 object-cover"
+                height="400" src="https://placehold.co/300x400" width="300" />
+              <div class="absolute bottom-0 left-0 right-0 bg-white text-blue-900 p-4 overlay">
+                <h3 class="font-bold">CRÉATION GARAGE EN BOIS À MONTAUBAN</h3>
+                <p>À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un
+                  Double.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide flex justify-center items-center">
+            <div class="relative">
+              <img alt="Interior renovation with yellow wall and painting supplies" class="w-72 h-96 object-cover"
+                height="400" src="https://placehold.co/300x400" width="300" />
+              <div class="absolute bottom-0 left-0 right-0 bg-white text-blue-900 p-4 overlay">
+                <h3 class="font-bold">CRÉATION GARAGE EN BOIS À MONTAUBAN</h3>
+                <p>À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un
+                  Double.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide flex justify-center items-center">
+            <div class="relative">
+              <img alt="Interior renovation with yellow wall and painting supplies" class="w-72 h-96 object-cover"
+                height="400" src="https://placehold.co/300x400" width="300" />
+              <div class="absolute bottom-0 left-0 right-0 bg-white text-blue-900 p-4 overlay">
+                <h3 class="font-bold">CRÉATION GARAGE EN BOIS À MONTAUBAN</h3>
+                <p>À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un
+                  Double.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide flex justify-center items-center">
+            <div class="relative">
+              <img alt="Interior renovation with yellow wall and painting supplies" class="w-72 h-96 object-cover"
+                height="400" src="https://placehold.co/300x400" width="300" />
+              <div class="absolute bottom-0 left-0 right-0 bg-white text-blue-900 p-4 overlay">
+                <h3 class="font-bold">CRÉATION GARAGE EN BOIS À MONTAUBAN</h3>
+                <p>À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un
+                  Double.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide flex justify-center items-center">
+            <div class="relative">
+              <img alt="Interior renovation with yellow wall and painting supplies" class="w-72 h-96 object-cover"
+                height="400" src="https://placehold.co/300x400" width="300" />
+              <div class="absolute bottom-0 left-0 right-0 bg-white text-blue-900 p-4 overlay">
+                <h3 class="font-bold">CRÉATION GARAGE EN BOIS À MONTAUBAN</h3>
+                <p>À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un
+                  Double.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide flex justify-center items-center">
+            <div class="relative">
+              <img alt="Interior renovation with yellow wall and painting supplies" class="w-72 h-96 object-cover"
+                height="400" src="https://placehold.co/300x400" width="300" />
+              <div class="absolute bottom-0 left-0 right-0 bg-white text-blue-900 p-4 overlay">
+                <h3 class="font-bold">CRÉATION GARAGE EN BOIS À MONTAUBAN</h3>
+                <p>À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un
+                  Double.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide flex justify-center items-center">
+            <div class="relative">
+              <img alt="Interior renovation with yellow wall and painting supplies" class="w-72 h-96 object-cover"
+                height="400" src="https://placehold.co/300x400" width="300" />
+              <div class="absolute bottom-0 left-0 right-0 bg-white text-blue-900 p-4 overlay">
+                <h3 class="font-bold">CRÉATION GARAGE EN BOIS À MONTAUBAN</h3>
+                <p>À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un
+                  Double.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide flex justify-center items-center">
+            <div class="relative">
+              <img alt="Interior renovation with yellow wall and painting supplies" class="w-72 h-96 object-cover"
+                height="400" src="https://placehold.co/300x400" width="300" />
+              <div class="absolute bottom-0 left-0 right-0 bg-white text-blue-900 p-4 overlay">
+                <h3 class="font-bold">CRÉATION GARAGE EN BOIS À MONTAUBAN</h3>
+                <p>À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un
+                  Double.</p>
+              </div>
+            </div>
+          </div>
+          
         </div>
-        <div class="flex-shrink-0 w-64">
-          <img alt="Realization 2" class="w-full h-auto object-cover" height="200"
-            src="https://storage.googleapis.com/a1aa/image/bgbiqAv6X0Z-aO5jzbtrx5oY_gyYh4SQBzRRDy9OuUI.jpg" width="300">
-          <p class="mt-2 text-center">
-            Rénovation Maison à Lyon
-          </p>
+        <div class="swiper-pagination"></div>
+        <!-- Add navigation buttons -->
+        <div class="swiper-button-prev absolute left-0 top-1/2 transform -translate-y-1/2 z-10 text-white bg-[#032539] bg-opacity-75 rounded-full w-12 h-12 flex items-center justify-center cursor-pointer">
+          <i class="fas fa-chevron-left text-xl"></i>
         </div>
-        <div class="flex-shrink-0 w-64">
-          <img alt="Realization 3" class="w-full h-auto object-cover" height="200"
-            src="https://storage.googleapis.com/a1aa/image/oSFfSEb3_nYCc9bqth9X0evS47Yog0mTPzn1L6v1ti4.jpg" width="300">
-          <p class="mt-2 text-center">
-            Extension Maison à Bordeaux
-          </p>
-        </div>
-        <div class="flex-shrink-0 w-64">
-          <img alt="Realization 4" class="w-full h-auto object-cover" height="200"
-            src="https://storage.googleapis.com/a1aa/image/5c3laOT4NINKwaAVMKsEFgkCXYQnbb8Fs0onPRmdi6M.jpg" width="300">
-          <p class="mt-2 text-center">
-            Rénovation Appartement à Paris
-          </p>
+        <div class="swiper-button-next absolute right-0 top-1/2 transform -translate-y-1/2 z-10 text-white bg-[#032539] bg-opacity-75 rounded-full w-12 h-12 flex items-center justify-center cursor-pointer">
+          <i class="fas fa-chevron-right text-xl"></i>
         </div>
       </div>
     </div>
+
+
+
   </section>
 
   <!-- FAQs Section -->
@@ -562,40 +679,45 @@
 
 
   <footer class="container mx-auto py-12 px-4 bg-[#1C768F] text-white fira">
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
-            <div class="mb-8 md:mb-0">
-                <h1 class="text-5xl font-bold mb-4">Logo</h1>
-                <p class="text-xl font-semibold mb-4">Création Garage En Bois<br>À Montauban</p>
-                <div class="flex space-x-4">
-                    <a href="#" class="text-white text-2xl"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="text-white text-2xl"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-white text-2xl"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-white text-2xl"><i class="fab fa-pinterest"></i></a>
-                </div>
-            </div>
-            <div class="mb-8 md:mb-0">
-                <h2 class="text-xl font-bold mb-4">Quick Links</h2>
-                <ul>
-                    <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Home</a></li>
-                    <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>About Us</a></li>
-                    <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Our Team Work</a></li>
-                    <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Services</a></li>
-                    <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Work Gallery</a></li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="text-xl font-bold mb-4">Stay Tuned With Us</h2>
-                <ul>
-                    <li class="mb-2 font-light"><i class="fas fa-map-marker-alt mr-2"></i>Casablanca-Morocco</li>
-                    <li class="mb-2 font-light"><i class="fas fa-envelope mr-2"></i>Hello@Email.com</li>
-                    <li class="mb-2 font-light"><i class="fas fa-phone mr-2"></i>07 000000000</li>
-                </ul>
-            </div>
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+      <div class="mb-8 md:mb-0">
+        <h1 class="text-5xl font-bold mb-4">Logo</h1>
+        <p class="text-xl font-semibold mb-4">Création Garage En Bois<br>À Montauban</p>
+        <div class="flex space-x-4">
+          <a href="#" class="text-white text-2xl"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-white text-2xl"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white text-2xl"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white text-2xl"><i class="fab fa-pinterest"></i></a>
         </div>
-        <div class="mt-12 border-t border-white pt-4 text-center">
-            <p>2025 ©COPYRIGHT REFLEX RENOVATION . TOUS DROITS RÉSERVÉS</p>
-        </div>
-    </footer>
+      </div>
+      <div class="mb-8 md:mb-0">
+        <h2 class="text-xl font-bold mb-4">Quick Links</h2>
+        <ul>
+          <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Home</a>
+          </li>
+          <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>About Us</a>
+          </li>
+          <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Our Team
+              Work</a></li>
+          <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Services</a>
+          </li>
+          <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Work
+              Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-xl font-bold mb-4">Stay Tuned With Us</h2>
+        <ul>
+          <li class="mb-2 font-light"><i class="fas fa-map-marker-alt mr-2"></i>Casablanca-Morocco</li>
+          <li class="mb-2 font-light"><i class="fas fa-envelope mr-2"></i>Hello@Email.com</li>
+          <li class="mb-2 font-light"><i class="fas fa-phone mr-2"></i>07 000000000</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-12 border-t border-white pt-4 text-center">
+      <p>2025  COPYRIGHT REFLEX RENOVATION . TOUS DROITS RÉSERVÉS</p>
+    </div>
+  </footer>
 
   <script>
     // Mobile menu toggle
@@ -608,6 +730,32 @@
       faqContent.classList.toggle('hidden');
       button.querySelector('svg').classList.toggle('rotate-180');
     }
+
+
+    var swiper = new Swiper(".multiple-slide-carousel", {
+      loop: true,
+      slidesPerView: 4,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        disabledClass: 'disabled_swiper_button'
+      },
+      breakpoints: {
+        1920: {
+          slidesPerView: 4,
+          spaceBetween: 30
+        },
+        1028: {
+          slidesPerView: 4,
+          spaceBetween: 10
+        },
+        990: {
+          slidesPerView: 1,
+          spaceBetween: 0
+        }
+      }
+    });
   </script>
 </body>
 
