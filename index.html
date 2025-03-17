@@ -1,411 +1,449 @@
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>
-    Web Page
-  </title>
-  <!-- <script src="https://cdn.tailwindcss.com">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Web Page</title>
+    <!-- <script src="https://cdn.tailwindcss.com">
     </script> -->
     <script src="JavaScript/tailwind.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <style>
-    .fira {
-      font-family: "Fira Sans", sans-serif;
-      font-weight: 700;
-      font-style: normal;
-      font-size: 12;
-    }
-  </style>
-</head>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .fira {
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 12;
+      }
+    </style>
+  </head>
 
-<body class="font-roboto">
-  <!-- Header -->
-  <header class="bg-[#1C768F] text-white">
-    <div class="container mx-auto flex justify-between items-center py-4 px-6">
-      <div class="flex items-center space-x-4">
-        <a class="text-sm" href="#">
-          Contactez-Nous
-        </a>
-        <span>
-          |
-        </span>
-        <a class="text-sm" href="#">
-          +33 9 87 65 43 21
-        </a>
-      </div>
-      <div class="flex items-center space-x-4">
-        <a class="text-sm" href="#">
-          <i class="fab fa-facebook-f">
-          </i>
-        </a>
-        <a class="text-sm" href="#">
-          <i class="fab fa-twitter">
-          </i>
-        </a>
-        <a class="text-sm" href="#">
-          <i class="fab fa-instagram">
-          </i>
-        </a>
-      </div>
-    </div>
-  </header>
-  <!-- Navigation -->
-  <nav class="bg-white shadow">
-    <div class="container mx-auto px-6 py-4">
-      <div class="flex items-center justify-between">
-        <div class="flex items-center">
-          <img alt="Logo" class="h-12" height="50" src="" width="100">
+  <body class="font-roboto">
+    <!-- Header -->
+    <header class="bg-[#1C768F] text-white">
+      <div
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <div class="flex items-center space-x-4">
+          <a class="text-sm" href="#"> Contactez-Nous </a>
+          <span> | </span>
+          <a class="text-sm" href="#"> +33 9 87 65 43 21 </a>
         </div>
-        
-        <!-- Mobile menu button -->
-        <div class="md:hidden">
-          <button id="mobile-menu-button" class="text-gray-700 hover:text-gray-900 focus:outline-none">
-            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          </button>
-        </div>
-
-        <!-- Desktop Navigation -->
-        <div class="hidden md:flex items-center space-x-8">
-          <a class="text-gray-700 hover:text-gray-900" href="#">Accueil</a>
-          <a class="text-gray-700 hover:text-gray-900" href="#">Qui Sommes Nous</a>
-          <a class="text-gray-700 hover:text-gray-900" href="#">Nos Réalisations</a>
-          <a class="text-gray-700 hover:text-gray-900" href="#">Nos Compétences</a>
-          <a class="text-gray-700 hover:text-gray-900" href="#">Blog</a>
-          <a class="bg-[#FA991C] text-white px-4 py-2 fira" href="#">demander un devis</a>
-        </div>
-        
-        
-        
-      </div>
-
-      <!-- Mobile Navigation -->
-      <div id="mobile-menu" class="hidden md:hidden mt-4">
-        <div class="flex flex-col space-y-4">
-          <a class="text-gray-700 hover:text-gray-900" href="#">Accueil</a>
-          <a class="text-gray-700 hover:text-gray-900" href="#">Qui Sommes Nous</a>
-          <a class="text-gray-700 hover:text-gray-900" href="#">Nos Réalisations</a>
-          <a class="text-gray-700 hover:text-gray-900" href="#">Nos Compétences</a>
-          <a class="text-gray-700 hover:text-gray-900" href="#">Blog</a>
-          <a class="bg-[#FA991C] text-white px-4 py-2 fira inline-block w-fit" href="#">demander un devis</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <!-- Hero Section -->
-  <section class="relative">
-    <img alt="Hero Image" class="w-full h-96 object-cover" height="600"
-      src="https://res.cloudinary.com/dlwvryyiz/image/upload/v1741559406/Bg_image_teo3el.png" width="1920">
-    <div
-      class="absolute inset-0 bg-black bg-opacity-0 flex flex-col justify-center items-center text-center text-white px-4"
-      style="">
-      <h1 class="text-3xl font-bold">
-        L'ADOPTION OU L'ADAPTATION <br> UNE DÉCISION QUI VOUS RESSEMBLE
-      </h1>
-      <p class="mt-4">
-        Développez La Notoriété De Votre Marque <br> Un Lien Fort Avec Votre Audience
-      </p>
-      <div class="mt-6 flex space-x-4">
-        <a class="bg-[#FBF3F2] text-[#1C768F] px-8 py-2 fira" href="#">
-          Demander un Devis
-        </a>
-        <a class="bg-[#FA991C] px-8 py-2 fira" href="#">
-          DEPANNAGE D'URGENCE
-        </a>
-      </div>
-    </div>
-  </section>
-  <!-- Recommendation Section -->
-  <section class="bg-[#1C768F] text-white py-6 flex px-8">
-    <div class="container mx-auto text-left">
-      <p class="fira text-xl">
-        Nos clients nous recommanderaient
-      </p>
-      <p>
-        Avec une étude sur la satisfaction client, les résultats confirment que 96% de nos clients
-        nous recommanderaient.
-      </p>
-
-    </div>
-    <a class="text-white fira px-4 py-2 inline-block border-solid border-2 " href="#">
-      Demander un Devis
-    </a>
-  </section>
-  <!-- About Section -->
-  <section class="py-12 bg-gray-100">
-    <div class="container mx-auto px-6">
-      <div class="flex flex-col md:flex-row items-center">
-        <img alt="About Image" class="w-full md:w-1/2 h-auto object-cover" height="300"
-          src="https://storage.googleapis.com/a1aa/image/jwn_mN9YxawGA8qIrlFs1LniIA8aJP6Q7lcSNWzF8UY.jpg" width="400">
-        <div class="md:ml-6 mt-6 md:mt-0">
-          <h2 class="text-2xl font-medium text-[#1C768F]">
-            Qui Sommes Nous?
-          </h2>
-          <p class="mt-4 text-gray-700 fira text-xl font-extrabold">
-            Through a vast selection of residential and commercial properties
-          </p>
-          <p class="mt-2 text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
-          </p>
-          <a class="bg-[#1C768F] text-white px-4 py-2 rounded mt-4 inline-block" href="#">
-            Être Appelé Par Un Expert
+        <div class="flex items-center space-x-4">
+          <a class="text-sm" href="#">
+            <i class="fab fa-facebook-f"> </i>
+          </a>
+          <a class="text-sm" href="#">
+            <i class="fab fa-twitter"> </i>
+          </a>
+          <a class="text-sm" href="#">
+            <i class="fab fa-instagram"> </i>
           </a>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Method Section -->
-  <section class="py-12">
-    <div class="container mx-auto px-6">
-      <h2 class="text-2xl font-bold text-blue-500">
-        Notre Méthode De Travail
-      </h2>
-      <p class="mt-4 text-gray-700">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua.
-      </p>
-      <p class="mt-2 text-gray-700">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua.
-      </p>
-    </div>
-  </section>
-  <!-- Competence Section -->
-  <section class="py-12 bg-gray-100">
-    <div class="container mx-auto px-6">
-      <h2 class="text-2xl font-bold text-blue-500">
-        Nos Domaines De Compétence Pour Tous Vos Travaux
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
-        <div class="bg-white p-4 shadow rounded text-center">
-          <i class="fas fa-hammer text-[#FA991C] text-3xl">
-          </i>
-          <h3 class="mt-4 text-lg font-bold">
-            Rénovation Sols
-          </h3>
-          <p class="mt-2 text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div class="bg-white p-4 shadow rounded text-center">
-          <i class="fas fa-home text-[#FA991C] text-3xl">
-          </i>
-          <h3 class="mt-4 text-lg font-bold">
-            Maçonnerie
-          </h3>
-          <p class="mt-2 text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div class="bg-white p-4 shadow rounded text-center">
-          <i class="fas fa-snowflake text-[#FA991C] text-3xl">
-          </i>
-          <h3 class="mt-4 text-lg font-bold">
-            Isolation
-          </h3>
-          <p class="mt-2 text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div class="bg-white p-4 shadow rounded text-center">
-          <i class="fas fa-paint-roller text-[#FA991C] text-3xl">
-          </i>
-          <h3 class="mt-4 text-lg font-bold">
-            Peinture
-          </h3>
-          <p class="mt-2 text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div class="bg-white p-4 shadow rounded text-center">
-          <i class="fas fa-tools text-[#FA991C] text-3xl">
-          </i>
-          <h3 class="mt-4 text-lg font-bold">
-            Plomberie
-          </h3>
-          <p class="mt-2 text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div class="bg-white p-4 shadow rounded text-center">
-          <i class="fas fa-bolt text-[#FA991C] text-3xl">
-          </i>
-          <h3 class="mt-4 text-lg font-bold">
-            Électricité
-          </h3>
-          <p class="mt-2 text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div class="bg-white p-4 shadow rounded text-center">
-          <i class="fas fa-paint-brush text-[#FA991C] text-3xl">
-          </i>
-          <h3 class="mt-4 text-lg font-bold">
-            Peinture
-          </h3>
-          <p class="mt-2 text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div class="bg-white p-4 shadow rounded text-center">
-          <i class="fas fa-tools text-[#FA991C] text-3xl">
-          </i>
-          <h3 class="mt-4 text-lg font-bold">
-            Toiture
-          </h3>
-          <p class="mt-2 text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Realizations Section -->
-  <section class="py-12 bg-[#1C768F] text-white">
-    <div class="container mx-auto px-6">
-      <h2 class="text-2xl font-bold text-center">
-        Nos Réalisations
-      </h2>
-      <p class="mt-4 text-center">
-        Grâce à un interlocuteur unique, vous bénéficiez d'un échange fluide et transparent
-      </p>
-      <div class="mt-6 flex space-x-4 overflow-x-auto">
-        <div class="flex-shrink-0 w-64">
-          <img alt="Realization 1" class="w-full h-auto object-cover" height="200"
-            src="https://storage.googleapis.com/a1aa/image/Fb8Sz40a_aGPVxB3O3y9FNAPeNSnXEYc4bqqtyvvhWI.jpg" width="300">
-          <p class="mt-2 text-center">
-            Création Garage en Bois à Montmartre
-          </p>
-        </div>
-        <div class="flex-shrink-0 w-64">
-          <img alt="Realization 2" class="w-full h-auto object-cover" height="200"
-            src="https://storage.googleapis.com/a1aa/image/bgbiqAv6X0Z-aO5jzbtrx5oY_gyYh4SQBzRRDy9OuUI.jpg" width="300">
-          <p class="mt-2 text-center">
-            Rénovation Maison à Lyon
-          </p>
-        </div>
-        <div class="flex-shrink-0 w-64">
-          <img alt="Realization 3" class="w-full h-auto object-cover" height="200"
-            src="https://storage.googleapis.com/a1aa/image/oSFfSEb3_nYCc9bqth9X0evS47Yog0mTPzn1L6v1ti4.jpg" width="300">
-          <p class="mt-2 text-center">
-            Extension Maison à Bordeaux
-          </p>
-        </div>
-        <div class="flex-shrink-0 w-64">
-          <img alt="Realization 4" class="w-full h-auto object-cover" height="200"
-            src="https://storage.googleapis.com/a1aa/image/5c3laOT4NINKwaAVMKsEFgkCXYQnbb8Fs0onPRmdi6M.jpg" width="300">
-          <p class="mt-2 text-center">
-            Rénovation Appartement à Paris
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Engagement Section -->
-  <section class="py-12">
-    <div class="container mx-auto px-6">
-      <h2 class="text-2xl font-bold text-center text-blue-500">
-        Nos Engagements
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6 mt-6 text-center">
-        <div>
-          <i class="fas fa-check-circle text-[#FA991C] text-3xl">
-          </i>
-          <h3 class="mt-4 text-lg font-bold">
-            Devis Rapide et Gratuit
-          </h3>
-        </div>
-        <div>
-          <i class="fas fa-clock text-[#FA991C] text-3xl">
-          </i>
-          <h3 class="mt-4 text-lg font-bold">
-            Réactivité et Disponibilité
-          </h3>
-        </div>
-        <div>
-          <i class="fas fa-handshake text-[#FA991C] text-3xl">
-          </i>
-          <h3 class="mt-4 text-lg font-bold">
-            Respect des délais et transparence
-          </h3>
-        </div>
-        <div>
-          <i class="fas fa-user-tie text-[#FA991C] text-3xl">
-          </i>
-          <h3 class="mt-4 text-lg font-bold">
-            Soutien Unique Interlocuteur
-          </h3>
-        </div>
-        <div>
-          <i class="fas fa-tools text-[#FA991C] text-3xl">
-          </i>
-          <h3 class="mt-4 text-lg font-bold">
-            Contrôle qualité 3 mois après le chantier
-          </h3>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Blog Section -->
-  <section class="py-12 bg-gray-100">
-    <div class="container mx-auto px-6">
-      <h2 class="text-2xl font-bold text-center text-blue-500">
-        Get the latest scoop on search trends and tactics straight from our SEO agency's experts.
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-        <div class="bg-white p-4 shadow rounded">
-          <img alt="Blog 1" class="w-full h-auto object-cover" height="200"
-            src="https://storage.googleapis.com/a1aa/image/QVQIPfcCvLefNTh3LgTUmJA7x93BLWvPCyZTPARAtXs.jpg" width="300">
-          <h3 class="mt-4 text-lg font-bold">
-            How To Find High Converting Keywords (And Create Content That Drives Traffic)
-          </h3>
-          <p class="mt-2 text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div class="bg-white p-4 shadow rounded">
-          <img alt="Blog 2" class="w-full h-auto object-cover" height="200"
-            src="https://storage.googleapis.com/a1aa/image/ceQw8k6qs1tJLivXyA9aHzd12LbGw6GjF3VVe3d1BN0.jpg" width="300">
-          <h3 class="mt-4 text-lg font-bold">
-            The Power of SEO for Lead Generation: What You Need to Know
-          </h3>
-          <p class="mt-2 text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div class="bg-white p-4 shadow rounded">
-          <img alt="Blog 3" class="w-full h-auto object-cover" height="200"
-            src="https://storage.googleapis.com/a1aa/image/2PiJL0E7a6XyCOvN8fdaMz-F3OEevWNjsPZsLHWyfsE.jpg" width="300">
-          <h3 class="mt-4 text-lg font-bold">
-            Google AI Overreach: What Are They And How Do They Impact Small Business SEO?
-          </h3>
-          <p class="mt-2 text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </header>
+    <!-- Navigation -->
+    <nav class="bg-white shadow">
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
+            <img alt="Logo" class="h-12" height="50" src="" width="100" />
+          </div>
 
-  <script>
-    // Mobile menu toggle
-    document.getElementById('mobile-menu-button').addEventListener('click', function() {
-      document.getElementById('mobile-menu').classList.toggle('hidden');
-    });
-  </script>
-</body>
+          <!-- Mobile menu button -->
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-gray-700 hover:text-gray-900 focus:outline-none"
+            >
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
 
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a class="text-gray-700 hover:text-gray-900" href="#">Accueil</a>
+            <a class="text-gray-700 hover:text-gray-900" href="#"
+              >Qui Sommes Nous</a
+            >
+            <a class="text-gray-700 hover:text-gray-900" href="#"
+              >Nos Réalisations</a
+            >
+            <a class="text-gray-700 hover:text-gray-900" href="#"
+              >Nos Compétences</a
+            >
+            <a class="text-gray-700 hover:text-gray-900" href="#">Blog</a>
+            <a class="bg-[#FA991C] text-white px-4 py-2 fira" href="#"
+              >demander un devis</a
+            >
+          </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4">
+          <div class="flex flex-col space-y-4">
+            <a class="text-gray-700 hover:text-gray-900" href="#">Accueil</a>
+            <a class="text-gray-700 hover:text-gray-900" href="#"
+              >Qui Sommes Nous</a
+            >
+            <a class="text-gray-700 hover:text-gray-900" href="#"
+              >Nos Réalisations</a
+            >
+            <a class="text-gray-700 hover:text-gray-900" href="#"
+              >Nos Compétences</a
+            >
+            <a class="text-gray-700 hover:text-gray-900" href="#">Blog</a>
+            <a
+              class="bg-[#FA991C] text-white px-4 py-2 fira inline-block w-fit"
+              href="#"
+              >demander un devis</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="relative">
+      <img
+        alt="Hero Image"
+        class="w-full h-96 object-cover"
+        height="600"
+        src="https://res.cloudinary.com/dlwvryyiz/image/upload/v1741559406/Bg_image_teo3el.png"
+        width="1920"
+      />
+      <div
+        class="absolute inset-0 bg-black bg-opacity-0 flex flex-col justify-center items-center text-center text-white px-4"
+        style=""
+      >
+        <h1 class="text-3xl font-bold">
+          L'ADOPTION OU L'ADAPTATION <br />
+          UNE DÉCISION QUI VOUS RESSEMBLE
+        </h1>
+        <p class="mt-4">
+          Développez La Notoriété De Votre Marque <br />
+          Un Lien Fort Avec Votre Audience
+        </p>
+        <div class="mt-6 flex space-x-4">
+          <a class="bg-[#FBF3F2] text-[#1C768F] px-8 py-2 fira" href="#">
+            Demander un Devis
+          </a>
+          <a class="bg-[#FA991C] px-8 py-2 fira" href="#">
+            DEPANNAGE D'URGENCE
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Recommendation Section -->
+    <section class="bg-[#1C768F] text-white py-6 flex px-8">
+      <div class="container mx-auto text-left">
+        <p class="fira text-xl">Nos clients nous recommanderaient</p>
+        <p>
+          Avec une étude sur la satisfaction client, les résultats confirment
+          que 96% de nos clients nous recommanderaient.
+        </p>
+      </div>
+      <a class="text-white fira px-4 py-2 inline-block border-solid border-2" href="#">
+        Demander un Devis
+      </a>
+    </section>
+    <!-- About Section -->
+    <section class="py-12 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center">
+          <img
+            alt="About Image"
+            class="w-full md:w-1/2 h-auto object-cover"
+            height="300"
+            src="https://storage.googleapis.com/a1aa/image/jwn_mN9YxawGA8qIrlFs1LniIA8aJP6Q7lcSNWzF8UY.jpg"
+            width="400"
+          />
+          <div class="md:ml-6 mt-6 md:mt-0">
+            <h2 class="text-2xl font-medium text-[#1C768F]">
+              Qui Sommes Nous?
+            </h2>
+            <p class="mt-4 text-gray-700 fira text-xl font-extrabold">
+              Through a vast selection of residential and commercial properties
+            </p>
+            <p class="mt-2 text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <a
+              class="bg-[#1C768F] text-white px-4 py-2 rounded mt-4 inline-block"
+              href="#"
+            >
+              Être Appelé Par Un Expert
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Method Section -->
+    <section class="py-12">
+      <div class="container mx-auto px-6">
+        <h2 class="text-2xl font-bold text-blue-500">
+          Notre Méthode De Travail
+        </h2>
+        <p class="mt-4 text-gray-700">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p class="mt-2 text-gray-700">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+    </section>
+    <!-- Competence Section -->
+    <section class="py-12 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <h2 class="text-2xl font-bold text-blue-500">
+          Nos Domaines De Compétence Pour Tous Vos Travaux
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
+          <div class="bg-white p-4 shadow rounded text-center">
+            <i class="fas fa-hammer text-[#FA991C] text-3xl"> </i>
+            <h3 class="mt-4 text-lg font-bold">Rénovation Sols</h3>
+            <p class="mt-2 text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="bg-white p-4 shadow rounded text-center">
+            <i class="fas fa-home text-[#FA991C] text-3xl"> </i>
+            <h3 class="mt-4 text-lg font-bold">Maçonnerie</h3>
+            <p class="mt-2 text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="bg-white p-4 shadow rounded text-center">
+            <i class="fas fa-snowflake text-[#FA991C] text-3xl"> </i>
+            <h3 class="mt-4 text-lg font-bold">Isolation</h3>
+            <p class="mt-2 text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="bg-white p-4 shadow rounded text-center">
+            <i class="fas fa-paint-roller text-[#FA991C] text-3xl"> </i>
+            <h3 class="mt-4 text-lg font-bold">Peinture</h3>
+            <p class="mt-2 text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="bg-white p-4 shadow rounded text-center">
+            <i class="fas fa-tools text-[#FA991C] text-3xl"> </i>
+            <h3 class="mt-4 text-lg font-bold">Plomberie</h3>
+            <p class="mt-2 text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="bg-white p-4 shadow rounded text-center">
+            <i class="fas fa-bolt text-[#FA991C] text-3xl"> </i>
+            <h3 class="mt-4 text-lg font-bold">Électricité</h3>
+            <p class="mt-2 text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="bg-white p-4 shadow rounded text-center">
+            <i class="fas fa-paint-brush text-[#FA991C] text-3xl"> </i>
+            <h3 class="mt-4 text-lg font-bold">Peinture</h3>
+            <p class="mt-2 text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="bg-white p-4 shadow rounded text-center">
+            <i class="fas fa-tools text-[#FA991C] text-3xl"> </i>
+            <h3 class="mt-4 text-lg font-bold">Toiture</h3>
+            <p class="mt-2 text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Realizations Section -->
+    <section class="py-12 bg-[#1C768F] text-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-2xl font-bold text-center">Nos Réalisations</h2>
+        <p class="mt-4 text-center">
+          Grâce à un interlocuteur unique, vous bénéficiez d'un échange fluide
+          et transparent
+        </p>
+        <div class="mt-6 flex space-x-4 overflow-x-auto">
+          <div class="flex-shrink-0 w-64">
+            <img
+              alt="Realization 1"
+              class="w-full h-auto object-cover"
+              height="200"
+              src="https://storage.googleapis.com/a1aa/image/Fb8Sz40a_aGPVxB3O3y9FNAPeNSnXEYc4bqqtyvvhWI.jpg"
+              width="300"
+            />
+            <p class="mt-2 text-center">Création Garage en Bois à Montmartre</p>
+          </div>
+          <div class="flex-shrink-0 w-64">
+            <img
+              alt="Realization 2"
+              class="w-full h-auto object-cover"
+              height="200"
+              src="https://storage.googleapis.com/a1aa/image/bgbiqAv6X0Z-aO5jzbtrx5oY_gyYh4SQBzRRDy9OuUI.jpg"
+              width="300"
+            />
+            <p class="mt-2 text-center">Rénovation Maison à Lyon</p>
+          </div>
+          <div class="flex-shrink-0 w-64">
+            <img
+              alt="Realization 3"
+              class="w-full h-auto object-cover"
+              height="200"
+              src="https://storage.googleapis.com/a1aa/image/oSFfSEb3_nYCc9bqth9X0evS47Yog0mTPzn1L6v1ti4.jpg"
+              width="300"
+            />
+            <p class="mt-2 text-center">Extension Maison à Bordeaux</p>
+          </div>
+          <div class="flex-shrink-0 w-64">
+            <img
+              alt="Realization 4"
+              class="w-full h-auto object-cover"
+              height="200"
+              src="https://storage.googleapis.com/a1aa/image/5c3laOT4NINKwaAVMKsEFgkCXYQnbb8Fs0onPRmdi6M.jpg"
+              width="300"
+            />
+            <p class="mt-2 text-center">Rénovation Appartement à Paris</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Engagement Section -->
+    <section class="py-12">
+      <div class="container mx-auto px-6">
+        <h2 class="text-2xl font-bold text-center text-blue-500">
+          Nos Engagements
+        </h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6 mt-6 text-center"
+        >
+          <div>
+            <i class="fas fa-check-circle text-[#FA991C] text-3xl"> </i>
+            <h3 class="mt-4 text-lg font-bold">Devis Rapide et Gratuit</h3>
+          </div>
+          <div>
+            <i class="fas fa-clock text-[#FA991C] text-3xl"> </i>
+            <h3 class="mt-4 text-lg font-bold">Réactivité et Disponibilité</h3>
+          </div>
+          <div>
+            <i class="fas fa-handshake text-[#FA991C] text-3xl"> </i>
+            <h3 class="mt-4 text-lg font-bold">
+              Respect des délais et transparence
+            </h3>
+          </div>
+          <div>
+            <i class="fas fa-user-tie text-[#FA991C] text-3xl"> </i>
+            <h3 class="mt-4 text-lg font-bold">Soutien Unique Interlocuteur</h3>
+          </div>
+          <div>
+            <i class="fas fa-tools text-[#FA991C] text-3xl"> </i>
+            <h3 class="mt-4 text-lg font-bold">
+              Contrôle qualité 3 mois après le chantier
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Section -->
+    <section class="py-12 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <h2 class="text-2xl font-bold text-center text-blue-500">
+          Get the latest scoop on search trends and tactics straight from our
+          SEO agency's experts.
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+          <div class="bg-white p-4 shadow rounded">
+            <img
+              alt="Blog 1"
+              class="w-full h-auto object-cover"
+              height="200"
+              src="https://storage.googleapis.com/a1aa/image/QVQIPfcCvLefNTh3LgTUmJA7x93BLWvPCyZTPARAtXs.jpg"
+              width="300"
+            />
+            <h3 class="mt-4 text-lg font-bold">
+              How To Find High Converting Keywords (And Create Content That
+              Drives Traffic)
+            </h3>
+            <p class="mt-2 text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="bg-white p-4 shadow rounded">
+            <img
+              alt="Blog 2"
+              class="w-full h-auto object-cover"
+              height="200"
+              src="https://storage.googleapis.com/a1aa/image/ceQw8k6qs1tJLivXyA9aHzd12LbGw6GjF3VVe3d1BN0.jpg"
+              width="300"
+            />
+            <h3 class="mt-4 text-lg font-bold">
+              The Power of SEO for Lead Generation: What You Need to Know
+            </h3>
+            <p class="mt-2 text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="bg-white p-4 shadow rounded">
+            <img
+              alt="Blog 3"
+              class="w-full h-auto object-cover"
+              height="200"
+              src="https://storage.googleapis.com/a1aa/image/2PiJL0E7a6XyCOvN8fdaMz-F3OEevWNjsPZsLHWyfsE.jpg"
+              width="300"
+            />
+            <h3 class="mt-4 text-lg font-bold">
+              Google AI Overreach: What Are They And How Do They Impact Small
+              Business SEO?
+            </h3>
+            <p class="mt-2 text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Mobile menu toggle
+      document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", function () {
+          document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+  </body>
 </html>
