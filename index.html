@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
@@ -384,9 +385,6 @@
 
         <!-- Toiture -->
         <div class="bg-white p-6 rounded-lg shadow-md">
-          <div class="text-[#FA991C] mb-4">
-            <i class="fas fa-home text-4xl"></i>
-          </div>
           <h3 class="text-xl font-semibold mb-2">Toiture</h3>
           <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
         </div>
@@ -494,80 +492,86 @@
 
   </section>
 
-  <!-- FAQs Section -->
-  <section class="py-12 bg-white">
-    <div class="container">
-      <div class="flex flex-row-reverse ">
+
+  <!-- Faqs section -->
+  <section class="p-12 flex flex-row-reverse w-full">
+    <!-- First Part -->
+    <div class="w-1/2 p-4">
         <div class="mt-20">
-          <div class="mb-8 md:mb-0">
-            <h2 class="text-3xl font-bold fira text-[#1C768F]">QUESTIONS FRÉQUENTES</h2>
-            <h3 class="text-2xl font-bold text-[#032539] mt-2">Common Queries Regarding Our Customer Support Services
-            </h3>
-            <p class="mt-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </p>
-          </div>
-
-          <div class="flex flex-col gap-5">
-            <!-- FAQ Item 1 -->
-            <div class="border-b border-gray-200 py-4 bg-white shadow-md p-4">
-              <button class="flex justify-between items-center w-full text-left" onclick="toggleFaq(this)">
-                <span class="text-lg font-medium text-[#032539]">How to get consultation ?</span>
-                <svg class="w-5 h-5 text-[#1C768F] transform transition-transform" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="mt-2 hidden">
-                <p class="text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua.
+            <div class="mb-8 md:mb-0">
+                <h2 class="text-3xl font-bold fira text-[#1C768F]">QUESTIONS FRÉQUENTES</h2>
+                <h3 class="text-2xl font-bold text-[#032539] mt-2">Common Queries Regarding Our Customer Support Services</h3>
+                <p class="mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-              </div>
             </div>
 
-            <!-- FAQ Item 2 -->
-            <div class="border-b border-gray-200 py-4 bg-white shadow-md p-4">
-              <button class="flex justify-between items-center w-full text-left" onclick="toggleFaq(this)">
-                <span class="text-lg font-medium text-[#032539]">How Long Working Time ?</span>
-                <svg class="w-5 h-5 text-[#1C768F] transform transition-transform" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="mt-2 hidden">
-                <p class="text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua.
-                </p>
-              </div>
-            </div>
+            <div class="flex flex-col gap-5">
+                <!-- FAQ Item 1 -->
+                <div class="border-b border-gray-200 py-4 bg-white shadow-md p-4">
+                    <button class="flex justify-between items-center w-full text-left" onclick="toggleFaq(this)">
+                        <span class="text-lg font-medium text-[#032539]">How to get consultation ?</span>
+                        <svg class="w-5 h-5 text-[#1C768F] transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mt-2 hidden">
+                        <p class="text-gray-600">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
 
-            <!-- FAQ Item 3 -->
-            <div class="border-b border-gray-200 py-4 bg-white shadow-md p-4">
-              <button class="flex justify-between items-center w-full text-left" onclick="toggleFaq(this)">
-                <span class="text-lg font-medium text-[#032539]">Where The Office Work ?</span>
-                <svg class="w-5 h-5 text-[#1C768F] transform transition-transform" fill="none" stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="mt-2 hidden">
-                <p class="text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua.
-                </p>
-              </div>
+                <!-- FAQ Item 2 -->
+                <div class="border-b border-gray-200 py-4 bg-white shadow-md p-4">
+                    <button class="flex justify-between items-center w-full text-left" onclick="toggleFaq(this)">
+                        <span class="text-lg font-medium text-[#032539]">How Long Working Time ?</span>
+                        <svg class="w-5 h-5 text-[#1C768F] transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mt-2 hidden">
+                        <p class="text-gray-600">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border-b border-gray-200 py-4 bg-white shadow-md p-4">
+                    <button class="flex justify-between items-center w-full text-left" onclick="toggleFaq(this)">
+                        <span class="text-lg font-medium text-[#032539]">Where The Office Work ?</span>
+                        <svg class="w-5 h-5 text-[#1C768F] transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mt-2 hidden">
+                      <i class="fas fa-quote-left text-black mr-2"></i>
+                      <p class="text-gray-600 flex items-start">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="grid grid-cols-2 gap-4 w-full max-w-4xl p-4">
-          <div class="bg-red-500 h-64"></div>
-          <div class="bg-red-500 h-128 row-span-2"></div>
-          <div class="bg-red-500 h-64"></div>
+    </div>
+
+    <!-- Second Part -->
+    <div class="w-1/2 p-4">
+        <div class="grid grid-cols-3 gap-4">
+            <div class="col-span-1 flex flex-col gap-4">
+                <div class="bg-gray-300 h-64"></div>
+                <div class="bg-gray-300 h-64"></div>
+            </div>
+            <div class="col-span-2 flex flex-col justify-between">
+                <div class="bg-gray-300 h-full"></div>
+                <div class="bg-gray-300 p-4 text-gray-700 text-center mt-5 h-36">
+                    <blockquote>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                    </blockquote>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
   </section>
 
