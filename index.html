@@ -1,9 +1,11 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Web Page</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>
+    Web Page
+  </title>
   <!-- <script src="https://cdn.tailwindcss.com">
     </script> -->
   <script src="JavaScript/tailwind.js"></script>
@@ -30,6 +32,9 @@
 
     section {
       background-color: #FBF3F2;
+      margin: 0;
+      padding-left: 30px;
+      padding-right: 30px;
     }
 
     body {
@@ -50,18 +55,18 @@
       transition: transform 0.3s ease-in-out;
       opacity: 0;
     }
-
+    
     .swiper-slide:hover .overlay {
       transform: translateY(0);
       opacity: 1;
     }
-
+    
     /* Remove default Swiper button arrows */
     .swiper-button-next::after,
     .swiper-button-prev::after {
       display: none;
     }
-
+    
     /* Styling for disabled navigation buttons */
     .disabled_swiper_button {
       opacity: 0.5;
@@ -125,8 +130,8 @@
           <a class="text-gray-700 hover:text-gray-900" href="#">Nos Réalisations</a>
           <a class="text-gray-700 hover:text-gray-900" href="#">Nos Compétences</a>
           <a class="text-gray-700 hover:text-gray-900" href="#">Blog</a>
-          <a class="bg-[#FA991C] text-white px-4 py-2 fira" href="#">demander un devis</a>
         </div>
+        <a class="bg-[#FA991C] text-white px-4 py-2 fira" href="#">demander un devis</a>
 
 
 
@@ -146,7 +151,7 @@
     </div>
   </nav>
   <!-- Hero Section -->
-  <section class="relative">
+  <section class="relative p-0">
     <img alt="Hero Image" class="w-full h-96 object-cover" height="600"
       src="https://res.cloudinary.com/dlwvryyiz/image/upload/v1741559406/Bg_image_teo3el.png" width="1920">
     <div
@@ -168,6 +173,7 @@
       </div>
     </div>
   </section>
+  
   <!-- Recommendation Section -->
   <section class="bg-[#1C768F] text-white py-6 flex px-8">
     <div class="container mx-auto text-left">
@@ -188,7 +194,7 @@
   <section class="py-12 bg-gray-100">
     <div class="container mx-auto px-6">
       <div class="flex flex-col md:flex-row items-center">
-        <img alt="About Image" class="w-full h-auto object-cover" height="300"
+        <img alt="About Image" class="w-4/5 h-auto object-cover" height="300"
           src="https://res.cloudinary.com/dlwvryyiz/image/upload/v1741722314/Image_idts00.png" width="700">
         <div class="md:ml-20 ml-6">
           <h2 class="text-4xl fira text-[#1C768F]">
@@ -225,7 +231,7 @@
   </section>
   <!-- Method Section -->
   <section class="py-12">
-    <div class="container mx-auto text-center px-40">
+    <div class="container text-center">
       <h2 class="text-3xl font-bold fira text-[#1C768F]">
         Notre Méthode De Travail
       </h2>
@@ -242,7 +248,7 @@
     </div>
   </section>
   <section class="py-12">
-    <div class="container mx-auto text-center px-40">
+    <div class="container text-center">
       <h2 class="text-3xl font-bold fira text-[#1C768F]">
         NOS ENGAGEMENTS
       </h2>
@@ -273,7 +279,7 @@
   </section>
   <!-- Competence Section -->
   <section class="py-12 bg-gray-100">
-    <div class="container mx-auto text-center px-40">
+    <div class="container text-center px-7">
       <h2 class="text-3xl font-bold fira text-[#1C768F]">
         NOS DOMAINES DE COMPÉTENCE POUR TOUS VOS TRAVAUX
       </h2>
@@ -483,11 +489,14 @@
         </div>
       </div>
     </div>
+
+
+
   </section>
 
   <!-- FAQs Section -->
   <section class="py-12 bg-white">
-    <div class="container mx-auto px-6 md:px-20">
+    <div class="container">
       <div class="flex flex-row-reverse ">
         <div class="mt-20">
           <div class="mb-8 md:mb-0">
@@ -500,7 +509,7 @@
             </p>
           </div>
 
-          <div class="flex flex-col">
+          <div class="flex flex-col gap-5">
             <!-- FAQ Item 1 -->
             <div class="border-b border-gray-200 py-4 bg-white shadow-md p-4">
               <button class="flex justify-between items-center w-full text-left" onclick="toggleFaq(this)">
@@ -562,100 +571,95 @@
     </div>
   </section>
 
+
+  
+
   <section class="py-12 bg-white">
-    <div class="p-20 mx-auto py-12">
       <h1 class="text-2xl font-bold text-center text-[#1C768F] mb-8">
         NOS DERNIÈRES ACTUALITÉS
       </h1>
       <br>
       <br>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-white shadow-lg overflow-hidden">
-          <img alt="A large house with a well-maintained lawn and a clear blue sky" class="w-full h-48 object-cover"
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+        <div class="bg-white shadow-lg overflow-hidden max-w-sm mx-auto">
+          <img alt="A large house with a well-maintained lawn and a clear blue sky" class="w-full h-56 object-cover"
             height="400" src="https://storage.googleapis.com/a1aa/image/-SvyElSd5lwgWDYSbSP8PwBruTq9ORdjQgakMso_JtI.jpg"
             width="600" />
           <div class="p-6">
-            <h2 class="text-xl font-bold text-[#1C768F] mb-2">
+            <h2 class="text-xl font-bold text-[#1C768F] mb-4">
               CRÉATION GARAGE EN BOIS À MONTAUBAN
             </h2>
             <br>
-            <br>
-            <p class="text-gray-700 mb-4">
+            <p class="text-gray-700 mb-6">
               À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un Double
               ...
             </p>
             <br>
-            <br>
-            <button class="bg-[#1C768F] text-white px-4 py-2 rounded">
+            <button class="bg-[#1C768F] text-white px-4 py-2 fira text-base">
               VOIR PLUS
             </button>
           </div>
-          <div class="px-6 py-4 bg-gray-100">
+          <div class="px-6 py-4 border-t">
             <p class="text-gray-600">
               Mourad Nom | 01-04-2025
             </p>
           </div>
         </div>
-        <div class="bg-white shadow-lg overflow-hidden">
-          <img alt="A large house with a well-maintained lawn and a clear blue sky" class="w-full h-48 object-cover"
+        <div class="bg-white shadow-lg overflow-hidden max-w-sm mx-auto">
+          <img alt="A large house with a well-maintained lawn and a clear blue sky" class="w-full h-56 object-cover"
             height="400" src="https://storage.googleapis.com/a1aa/image/-SvyElSd5lwgWDYSbSP8PwBruTq9ORdjQgakMso_JtI.jpg"
             width="600" />
           <div class="p-6">
-            <h2 class="text-xl font-bold text-[#1C768F] mb-2">
+            <h2 class="text-xl font-bold text-[#1C768F] mb-4">
               CRÉATION GARAGE EN BOIS À MONTAUBAN
             </h2>
             <br>
-            <br>
-            <p class="text-gray-700 mb-4">
+            <p class="text-gray-700 mb-6">
               À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un Double
               ...
             </p>
             <br>
-            <br>
-            <button class="bg-[#1C768F] text-white px-4 py-2 rounded">
+            <button class="bg-[#1C768F] text-white px-4 py-2 fira text-base">
               VOIR PLUS
             </button>
           </div>
-          <div class="px-6 py-4 bg-gray-100">
+          <div class="px-6 py-4 border-t">
             <p class="text-gray-600">
               Mourad Nom | 01-04-2025
             </p>
           </div>
         </div>
-        <div class="bg-white shadow-lg overflow-hidden">
-          <img alt="A large house with a well-maintained lawn and a clear blue sky" class="w-full h-48 object-cover"
+        <div class="bg-white shadow-lg overflow-hidden max-w-sm mx-auto">
+          <img alt="A large house with a well-maintained lawn and a clear blue sky" class="w-full h-56 object-cover"
             height="400" src="https://storage.googleapis.com/a1aa/image/-SvyElSd5lwgWDYSbSP8PwBruTq9ORdjQgakMso_JtI.jpg"
             width="600" />
           <div class="p-6">
-            <h2 class="text-xl font-bold text-[#1C768F] mb-2">
+            <h2 class="text-xl font-bold text-[#1C768F] mb-4">
               CRÉATION GARAGE EN BOIS À MONTAUBAN
             </h2>
             <br>
-            <br>
-            <p class="text-gray-700 mb-4">
+            <p class="text-gray-700 mb-6">
               À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un Double
               ...
             </p>
             <br>
-            <br>
-            <button class="bg-[#1C768F] text-white px-4 py-2 rounded">
+            <button class="bg-[#1C768F] text-white px-4 py-2 fira text-base">
               VOIR PLUS
             </button>
           </div>
-          <div class="px-6 py-4 bg-gray-100">
+          <div class="px-6 py-4 border-t">
             <p class="text-gray-600">
               Mourad Nom | 01-04-2025
             </p>
           </div>
         </div>
       </div>
-    </div>
   </section>
 
 
   <footer class="container mx-auto py-12 px-4 bg-[#1C768F] text-white fira">
     <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
-      <div class="mb-8 md:mb-0">
+      <div class="mb-8 md:mb-0 p-8">
         <h1 class="text-5xl font-bold mb-4">Logo</h1>
         <p class="text-xl font-semibold mb-4">Création Garage En Bois<br>À Montauban</p>
         <div class="flex space-x-4">
@@ -689,8 +693,8 @@
         </ul>
       </div>
     </div>
-    <div class="mt-12 border-t border-white pt-4 text-center">
-      <p>2025 COPYRIGHT REFLEX RENOVATION . TOUS DROITS RÉSERVÉS</p>
+    <div class="mt-12 border-t border-white pt-4 text-center m-0">
+      <p>2025  COPYRIGHT REFLEX RENOVATION . TOUS DROITS RÉSERVÉS</p>
     </div>
   </footer>
 
