@@ -152,23 +152,46 @@
     </div>
   </nav>
   <!-- Hero Section -->
-  <section class="relative p-0">
-    <img alt="Hero Image" class="w-full h-96 object-cover" height="600"
-      src="https://res.cloudinary.com/dlwvryyiz/image/upload/v1741559406/Bg_image_teo3el.png" width="1920">
-    <div
-      class="absolute inset-0 bg-black bg-opacity-0 flex flex-col justify-center items-center text-center text-white px-4"
-      style="">
-      <h1 class="text-3xl font-bold">
+  <section class="relative p-0 h-[calc(100vh-236px)]">
+    <div class="carousel-container h-full relative overflow-hidden">
+      <div class="carousel-slides h-full">
+        <img alt="Hero Image 1" class="w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-500" 
+          src="https://res.cloudinary.com/dlwvryyiz/image/upload/v1741559406/Bg_image_teo3el.png">
+        <img alt="Hero Image 2" class="w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-500" 
+          src="https://res.cloudinary.com/dlwvryyiz/image/upload/v1741559406/Bg_image_teo3el.png">
+        <img alt="Hero Image 3" class="w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-500" 
+          src="https://res.cloudinary.com/dlwvryyiz/image/upload/v1741559406/Bg_image_teo3el.png">
+      </div>
+      <!-- Carousel Navigation -->
+      <button class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full hover:bg-opacity-75 transition-all z-10" onclick="prevSlide()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <button class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full hover:bg-opacity-75 transition-all z-10" onclick="nextSlide()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+      <!-- Dots -->
+      <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
+        <button class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 transition-all dot active" onclick="goToSlide(0)"></button>
+        <button class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 transition-all dot" onclick="goToSlide(1)"></button>
+        <button class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 transition-all dot" onclick="goToSlide(2)"></button>
+      </div>
+    </div>
+    <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-center text-white px-4">
+      <h1 class="text-5xl font-bold">
         L'ADOPTION OU L'ADAPTATION <br> UNE DÉCISION QUI VOUS RESSEMBLE
       </h1>
-      <p class="mt-4">
+      <p class="mt-4 text-2xl">
         Développez La Notoriété De Votre Marque <br> Un Lien Fort Avec Votre Audience
       </p>
       <div class="mt-6 flex space-x-4">
-        <a class="bg-[#FBF3F2] text-[#1C768F] px-8 py-2 fira" href="#">
+        <a class="bg-[#FBF3F2] text-[#1C768F] px-8 py-2 fira text-base" href="#">
           Demander un Devis
         </a>
-        <a class="bg-[#FA991C] px-8 py-2 fira" href="#">
+        <a class="bg-[#FA991C] px-8 py-2 fira text-white text-base" href="#">
           DEPANNAGE D'URGENCE
         </a>
       </div>
@@ -176,8 +199,8 @@
   </section>
   
   <!-- Recommendation Section -->
-  <section class="bg-[#1C768F] text-white py-6 flex px-8">
-    <div class="container mx-auto text-left">
+  <section class="bg-[#1C768F] text-white py-6 px-8 flex items-center justify-between">
+    <div class="text-left">
       <p class="fira text-xl">
         Nos clients nous recommanderaient
       </p>
@@ -185,14 +208,11 @@
         Avec une étude sur la satisfaction client, les résultats confirment que 96% de nos clients
         nous recommanderaient.
       </p>
-
     </div>
-    <a class="text-white fira px-4 py-2 inline-block border-solid border-2 " href="#">
-      Demander un Devis
-    </a>
+    <a class="text-white fira px-4 py-2 inline-block border-solid border-2 text-base whitespace-nowrap" href="#">Demander un Devis</a>
   </section>
   <!-- About Section -->
-  <section class="py-12 bg-gray-100">
+  <section class="py-12 ">
     <div class="container mx-auto px-6">
       <div class="flex flex-col md:flex-row items-center">
         <img alt="About Image" class="w-4/5 h-auto object-cover" height="300"
@@ -231,7 +251,7 @@
     </div>
   </section>
   <!-- Method Section -->
-  <section class="py-12">
+  <section class="py-12 ">
     <div class="container text-center">
       <h2 class="text-3xl font-bold fira text-[#1C768F]">
         Notre Méthode De Travail
@@ -248,7 +268,7 @@
       </p>
     </div>
   </section>
-  <section class="py-12">
+  <section class="py-12 ">
     <div class="container text-center">
       <h2 class="text-3xl font-bold fira text-[#1C768F]">
         NOS ENGAGEMENTS
@@ -279,7 +299,7 @@
     </div>
   </section>
   <!-- Competence Section -->
-  <section class="py-12 bg-gray-100">
+  <section class="py-12 ">
     <div class="container text-center px-7">
       <h2 class="text-3xl font-bold fira text-[#1C768F]">
         NOS DOMAINES DE COMPÉTENCE POUR TOUS VOS TRAVAUX
@@ -291,7 +311,7 @@
             <i class="fas fa-tools text-4xl"></i>
           </div>
           <h3 class="text-xl font-semibold mb-2">Rénovation Sols</h3>
-          <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          
         </div>
 
         <!-- Menuiserie -->
@@ -300,7 +320,7 @@
             <i class="fas fa-home text-4xl"></i>
           </div>
           <h3 class="text-xl font-semibold mb-2">Menuiserie</h3>
-          <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          
         </div>
 
         <!-- Isolation -->
@@ -309,7 +329,7 @@
             <i class="fas fa-layer-group text-4xl"></i>
           </div>
           <h3 class="text-xl font-semibold mb-2">Isolation</h3>
-          <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          
         </div>
 
         <!-- Terrasse -->
@@ -318,7 +338,7 @@
             <i class="fas fa-hammer text-4xl"></i>
           </div>
           <h3 class="text-xl font-semibold mb-2">Terrasse</h3>
-          <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          
         </div>
 
         <!-- Ferronnerie -->
@@ -327,7 +347,7 @@
             <i class="fas fa-wrench text-4xl"></i>
           </div>
           <h3 class="text-xl font-semibold mb-2">Ferronnerie</h3>
-          <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          
         </div>
 
         <!-- Electricité -->
@@ -336,7 +356,7 @@
             <i class="fas fa-bolt text-4xl"></i>
           </div>
           <h3 class="text-xl font-semibold mb-2">Electricité</h3>
-          <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          
         </div>
 
         <!-- Peinture -->
@@ -345,7 +365,7 @@
             <i class="fas fa-paint-roller text-4xl"></i>
           </div>
           <h3 class="text-xl font-semibold mb-2">Peinture</h3>
-          <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          
         </div>
 
         <!-- Toiture -->
@@ -354,7 +374,7 @@
             <i class="fas fa-home text-4xl"></i>
           </div>
           <h3 class="text-xl font-semibold mb-2">Toiture</h3>
-          <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          
         </div>
         <!-- Ferronnerie -->
         <div class="bg-white p-6 rounded-lg shadow-md">
@@ -362,7 +382,7 @@
             <i class="fas fa-wrench text-4xl"></i>
           </div>
           <h3 class="text-xl font-semibold mb-2">Ferronnerie</h3>
-          <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          
         </div>
 
         <!-- Electricité -->
@@ -371,7 +391,7 @@
             <i class="fas fa-bolt text-4xl"></i>
           </div>
           <h3 class="text-xl font-semibold mb-2">Electricité</h3>
-          <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          
         </div>
 
         <!-- Peinture -->
@@ -380,13 +400,13 @@
             <i class="fas fa-paint-roller text-4xl"></i>
           </div>
           <h3 class="text-xl font-semibold mb-2">Peinture</h3>
-          <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          
         </div>
 
         <!-- Toiture -->
         <div class="bg-white p-6 rounded-lg shadow-md">
           <h3 class="text-xl font-semibold mb-2">Toiture</h3>
-          <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          
         </div>
       </div>
     </div>
@@ -609,7 +629,7 @@
 
   
 
-  <section class="py-12 bg-white">
+  <section class="py-12">
       <h1 class="text-2xl font-bold text-center text-[#1C768F] mb-8">
         NOS DERNIÈRES ACTUALITÉS
       </h1>
@@ -696,7 +716,7 @@
     <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
       <div class="mb-8 md:mb-0 p-8">
         <h1 class="text-5xl font-bold mb-4">Logo</h1>
-        <p class="text-xl font-semibold mb-4">Création Garage En Bois<br>À Montauban</p>
+        <p class="text-xl font-semibold mb-4">Création Garage En Bois À Montauban</p>
         <div class="flex space-x-4">
           <a href="#" class="text-white text-2xl"><i class="fab fa-facebook"></i></a>
           <a href="#" class="text-white text-2xl"><i class="fab fa-twitter"></i></a>
@@ -770,7 +790,64 @@
         }
       }
     });
+    var swiper = new Swiper(".hero-swiper", {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        disabledClass: 'disabled_swiper_button'
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
   </script>
+  <script>
+    // Carousel functionality
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-slides img');
+    const dots = document.querySelectorAll('.dot');
+    
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove('opacity-100'));
+      slides.forEach(slide => slide.classList.add('opacity-0'));
+      dots.forEach(dot => dot.classList.remove('active'));
+      
+      slides[index].classList.remove('opacity-0');
+      slides[index].classList.add('opacity-100');
+      dots[index].classList.add('active');
+      currentSlide = index;
+    }
+    
+    function nextSlide() {
+      const next = (currentSlide + 1) % slides.length;
+      showSlide(next);
+    }
+    
+    function prevSlide() {
+      const prev = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(prev);
+    }
+    
+    function goToSlide(index) {
+      showSlide(index);
+    }
+    
+    // Auto advance slides every 5 seconds
+    setInterval(nextSlide, 5000);
+    
+    // Initialize first slide
+    showSlide(0);
+  </script>
+  <style>
+    .dot.active {
+      background-color: white;
+      opacity: 1;
+    }
+  </style>
 </body>
 
 </html>
