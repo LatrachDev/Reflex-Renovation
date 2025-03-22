@@ -222,14 +222,18 @@
   </section>
 
 
-  <!-- About Section -->
-  <section class="py-12">
-    <div class="container mx-auto px-6">
-      <div class="flex flex-col lg:flex-row items-center">
-        <img alt="About Image" class="w-full lg:w-1/2 h-auto object-cover rounded-lg shadow-lg" height="300"
-          src="https://res.cloudinary.com/dlwvryyiz/image/upload/v1741722314/Image_idts00.png" width="700">
-        <div class="lg:ml-12 mt-6 lg:mt-0 lg:text-left">
-          <h2 class="text-3xl lg:text-4xl fira text-[#1C768F] font-bold">
+<!-- About Section -->
+<section class="py-12">
+  <div class="container mx-auto px-6">
+    <div class="flex flex-col lg:flex-row items-stretch">
+      <!-- Image -->
+      <img alt="About Image" class="w-full lg:w-4/12 h-auto lg:h-full object-cover rounded-lg shadow-lg" 
+        src="https://res.cloudinary.com/dlwvryyiz/image/upload/v1741722314/Image_idts00.png">
+      
+      <!-- Text Content -->
+      <div class="lg:w-1/2 flex flex-col justify-around h-full lg:pl-12">
+        <div>
+          <h2 class="text-3xl lg:text-4xl mt-6 md:mt-6 lg:mt-0 fira text-[#1C768F] font-bold">
             Qui Sommes Nous?
           </h2>
           <p class="mt-4 text-gray-700 fira text-2xl lg:text-3xl font-extrabold">
@@ -245,23 +249,30 @@
             <p class="text-sm lg:text-md font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
           </blockquote>
           <div class="mt-4">
-            <p class="text-gray-700 flex items-center  lg:justify-start">
+            <p class="text-gray-700 flex items-center">
               <i class="fas fa-check text-[#1C768F] mr-2"></i>
               Best Choicing Agency
             </p>
-            <p class="text-gray-700 flex items-center  lg:justify-start mt-2">
+            <p class="text-gray-700 flex items-center mt-2">
               <i class="fas fa-check text-[#1C768F] mr-2"></i>
               More Than Real Estate Services
             </p>
           </div>
-          <a class="bg-[#FA991C] text-white px-6 py-3 fira text-lg lg:text-xl mt-6 inline-block rounded-lg shadow-md hover:bg-[#e0891b] transition duration-300"
+
+          <button class="mt-6">
+            <a href="" class="bg-[#FA991C] w-[300px] text-white px-6 py-3 fira text-lg lg:text-xl mt-6 rounded-lg shadow-md hover:bg-[#e0891b] transition duration-300"
             href="#">
-            Être Appelé Par Un Expert
-          </a>
+              Être Appelé Par Un Expert
+            </a>
+          </button>
+
         </div>
       </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Method Section -->
   <section class="py-12">
@@ -429,8 +440,10 @@
 
         <!-- Toiture -->
         <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="text-[#FA991C] mb-4">
+            <i class="fas fa-home text-4xl"></i>
+          </div>
           <h3 class="text-xl font-semibold mb-2">Toiture</h3>
-
         </div>
       </div>
     </div>
