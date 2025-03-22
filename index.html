@@ -56,18 +56,18 @@
       transition: transform 0.3s ease-in-out;
       opacity: 0;
     }
-    
+
     .swiper-slide:hover .overlay {
       transform: translateY(0);
       opacity: 1;
     }
-    
+
     /* Remove default Swiper button arrows */
     .swiper-button-next::after,
     .swiper-button-prev::after {
       display: none;
     }
-    
+
     /* Styling for disabled navigation buttons */
     .disabled_swiper_button {
       opacity: 0.5;
@@ -80,33 +80,26 @@
   <!-- Header -->
   <header class="bg-[#1C768F] text-white">
     <div class="container mx-auto flex justify-between items-center py-4 px-12">
-      <div class="flex items-center space-x-4">
-        <a class="text-sm" href="#">
-          Contactez-Nous
-        </a>
-        <span>
-          |
-        </span>
-        <a class="text-sm" href="#">
-          +33 9 87 65 43 21
-        </a>
+
+      <div class="flex items-center space-x-2">
+
+        <a class="text-xs md:text-sm" href="#">Contactez-Nous</a>
+        <span>|</span>
+        <a class="text-xs md:text-sm" href="#">+33 9 87 65 43 21</a>
+
       </div>
+
       <div class="flex items-center space-x-4">
-        <a class="text-sm" href="#">
-          <i class="fab fa-facebook-f">
-          </i>
-        </a>
-        <a class="text-sm" href="#">
-          <i class="fab fa-twitter">
-          </i>
-        </a>
-        <a class="text-sm" href="#">
-          <i class="fab fa-instagram">
-          </i>
-        </a>
+
+        <a class="text-xs md:text-sm" href="#"><i class="fab fa-facebook-f"></i></a>
+        <a class="text-xs md:text-sm" href="#"><i class="fab fa-twitter"></i></a>
+        <a class="text-xs md:text-sm" href="#"><i class="fab fa-instagram"></i></a>
+
       </div>
+
     </div>
   </header>
+
   <!-- Navigation -->
   <nav class="bg-white shadow">
     <div class="container mx-auto px-12 py-4">
@@ -150,167 +143,182 @@
   </nav>
 
   <!-- Hero Section -->
-<section class="relative p-0 h-[calc(100vh-236px)]">
-  <div class="carousel-container h-full relative overflow-hidden">
-    <div class="carousel-slides h-full">
-      <img alt="Hero Image 1" class="w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-500" 
-        src="https://res.cloudinary.com/dlwvryyiz/image/upload/v1741559406/Bg_image_teo3el.png">
-      <img alt="Hero Image 2" class="w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-500" 
-        src="https://res.cloudinary.com/dlwvryyiz/image/upload/v1741559406/Bg_image_teo3el.png">
-      <img alt="Hero Image 3" class="w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-500" 
-        src="https://res.cloudinary.com/dlwvryyiz/image/upload/v1741559406/Bg_image_teo3el.png">
-    </div>
-    <!-- Carousel Navigation -->
-    <button class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full hover:bg-opacity-75 transition-all z-10" onclick="prevSlide()">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-      </svg>
-    </button>
-    <button class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full hover:bg-opacity-75 transition-all z-10" onclick="nextSlide()">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-      </svg>
-    </button>
-    <!-- Dots -->
-    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
-      <button class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 transition-all dot active" onclick="goToSlide(0)"></button>
-      <button class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 transition-all dot" onclick="goToSlide(1)"></button>
-      <button class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 transition-all dot" onclick="goToSlide(2)"></button>
-    </div>
-  </div>
-  <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-center text-white px-4">
-    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
-      L'ADOPTION OU L'ADAPTATION <br> UNE DÉCISION QUI VOUS RESSEMBLE
-    </h1>
-    <p class="mt-4 text-lg sm:text-xl md:text-2xl">
-      Développez La Notoriété De Votre Marque <br> Un Lien Fort Avec Votre Audience
-    </p>
-    <div class="mt-6 flex flex-col sm:flex-row sm:space-x-4 space-y-2 sm:space-y-0">
-      <a class="bg-[#FBF3F2] text-[#1C768F] px-6 py-2 fira text-sm sm:text-base " href="#">
-        Projets/Travaux Réfections
-      </a>
-      <a class="bg-[#FA991C] text-white px-6 py-2 fira text-sm sm:text-base " href="#">
-        DEPANNAGE D'URGENCE
-      </a>
-    </div>
-  </div>
-</section>
+  <section class="relative p-0 h-[calc(100vh-236px)]">
+    <div class="carousel-container h-full relative overflow-hidden">
+      <div class="carousel-slides h-full">
+        <img alt="Hero Image 1"
+          class="w-full h-full object-cover absolute inset-0 opacity-100 transition-opacity duration-500"
+          src="https://res.cloudinary.com/dlwvryyiz/image/upload/v1741559406/Bg_image_teo3el.png">
+        <img alt="Hero Image 2"
+          class="w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-500"
+          src="https://res.cloudinary.com/dlwvryyiz/image/upload/v1741559406/Bg_image_teo3el.png">
+        <img alt="Hero Image 3"
+          class="w-full h-full object-cover absolute inset-0 opacity-0 transition-opacity duration-500"
+          src="https://res.cloudinary.com/dlwvryyiz/image/upload/v1741559406/Bg_image_teo3el.png">
+      </div>
 
-  
-  <!-- Recommendation Section -->
-<section class="bg-[#1C768F] text-white py-6 px-4 sm:px-8 flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
-  <div class="text-center sm:text-left">
-    <p class="fira text-lg sm:text-xl font-semibold">
-      Nos clients nous recommanderaient
-    </p>
-    <p class="text-sm sm:text-base mt-2">
-      Avec une étude sur la satisfaction client, les résultats confirment que 96% de nos clients
-      nous recommanderaient.
-    </p>
-  </div>
-  <a class="text-white fira px-4 py-2 inline-block border-solid border-2 text-sm sm:text-base whitespace-nowrap mt-2 sm:mt-0" href="#">
-    Demander un Devis
-  </a>
-</section>
+      <!-- Carousel Navigation -->
+      <button
+        class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full hover:bg-opacity-75 transition-all z-10"
+        onclick="prevSlide()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <button
+        class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full hover:bg-opacity-75 transition-all z-10"
+        onclick="nextSlide()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
 
-
-  <!-- About Section -->
-<section class="py-12">
-  <div class="container mx-auto px-6">
-    <div class="flex flex-col lg:flex-row items-center">
-      <img 
-        alt="About Image" 
-        class="w-full lg:w-1/2 h-auto object-cover rounded-lg shadow-lg" 
-        height="300"
-        src="https://res.cloudinary.com/dlwvryyiz/image/upload/v1741722314/Image_idts00.png" 
-        width="700"
-      >
-      <div class="lg:ml-12 mt-6 lg:mt-0 lg:text-left">
-        <h2 class="text-3xl lg:text-4xl fira text-[#1C768F] font-bold">
-          Qui Sommes Nous?
-        </h2>
-        <p class="mt-4 text-gray-700 fira text-2xl lg:text-3xl font-extrabold">
-          Through a vast selection of residential and commercial properties
-        </p>
-        <p class="mt-2 text-gray-700 text-base lg:text-lg">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea commodo consequat.
-        </p>
-        <blockquote class="p-0 pl-4 my-4 border-s-4 border-[#1C768F]">
-          <p class="fira text-[#1C768F] text-lg lg:text-xl">Good Property Building</p>
-          <p class="text-sm lg:text-md font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        </blockquote>
-        <div class="mt-4">
-          <p class="text-gray-700 flex items-center  lg:justify-start">
-            <i class="fas fa-check text-[#1C768F] mr-2"></i>
-            Best Choicing Agency
-          </p>
-          <p class="text-gray-700 flex items-center  lg:justify-start mt-2">
-            <i class="fas fa-check text-[#1C768F] mr-2"></i>
-            More Than Real Estate Services
-          </p>
-        </div>
-        <a 
-          class="bg-[#FA991C] text-white px-6 py-3 fira text-lg lg:text-xl mt-6 inline-block rounded-lg shadow-md hover:bg-[#e0891b] transition duration-300" 
-          href="#"
-        >
-          Être Appelé Par Un Expert
+      <!-- Dots -->
+      <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
+        <button class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 transition-all dot active"
+          onclick="goToSlide(0)"></button>
+        <button class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 transition-all dot"
+          onclick="goToSlide(1)"></button>
+        <button class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 transition-all dot"
+          onclick="goToSlide(2)"></button>
+      </div>
+    </div>
+    <div
+      class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-center text-white px-4">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+        L'ADOPTION OU L'ADAPTATION <br> UNE DÉCISION QUI VOUS RESSEMBLE
+      </h1>
+      <p class="mt-4 text-lg sm:text-xl md:text-2xl">
+        Développez La Notoriété De Votre Marque <br> Un Lien Fort Avec Votre Audience
+      </p>
+      <div class="mt-6 flex flex-col sm:flex-row sm:space-x-4 space-y-2 sm:space-y-0">
+        <a class="bg-[#FBF3F2] text-[#1C768F] px-6 py-2 fira text-sm sm:text-base " href="#">
+          Projets/Travaux Réfections
+        </a>
+        <a class="bg-[#FA991C] text-white px-6 py-2 fira text-sm sm:text-base " href="#">
+          DEPANNAGE D'URGENCE
         </a>
       </div>
     </div>
-  </div>
-</section>
-
-  <!-- Method Section -->
-<section class="py-12">
-  <div class="container mx-auto px-6 text-center">
-    <h2 class="text-2xl lg:text-3xl font-bold fira text-[#1C768F]">
-      Notre Méthode De Travail
-    </h2>
-    <p class="mt-4 text-gray-700 text-base lg:text-lg">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-      et dolore magna.
-    </p>
-    <p class="mt-2 text-gray-700 text-base lg:text-lg">
-      Aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipis.
-    </p>
-  </div>
-</section>
+  </section>
 
 
-<section class="py-12">
-  <div class="container text-center">
-    <h2 class="text-3xl font-bold fira text-[#1C768F]">
-      NOS ENGAGEMENTS
-    </h2>
-    <div class="flex flex-wrap justify-center gap-6 mt-10">
-      <div class="flex flex-col items-center fira font-medium text-gray-700" style="flex: 1 1 240px; max-width: 241px;">
-        <i class="fas fa-check-circle text-[#FA991C] text-3xl mb-2"></i>
-        <p class="text-sm text-center">Devis Rapide et Gratuit</p>
-      </div>
-      <div class="flex flex-col items-center fira font-medium text-gray-700" style="flex: 1 1 240px; max-width: 241px;">
-        <i class="fas fa-clock text-[#FA991C] text-3xl mb-2"></i>
-        <p class="text-sm text-center">Réactivité et Disponibilité</p>
-      </div>
-      <div class="flex flex-col items-center fira font-medium text-gray-700" style="flex: 1 1 240px; max-width: 241px;">
-        <i class="fas fa-handshake text-[#FA991C] text-3xl mb-2"></i>
-        <p class="text-sm text-center">Respect des délais et transparence</p>
-      </div>
-      <div class="flex flex-col items-center fira font-medium text-gray-700" style="flex: 1 1 240px; max-width: 241px;">
-        <i class="fas fa-user-tie text-[#FA991C] text-3xl mb-2"></i>
-        <p class="text-sm text-center">Seul et Unique Interlocuteur</p>
-      </div>
-      <div class="flex flex-col items-center fira font-medium text-gray-700" style="flex: 1 1 240px; max-width: 241px;">
-        <i class="fas fa-tools text-[#FA991C] text-3xl mb-2"></i>
-        <p class="text-sm text-center">Contrôle qualité 3 mois après la fin du chantier</p>
+  <!-- Recommendation Section -->
+  <section
+    class="bg-[#1C768F] text-white py-6 px-4 sm:px-8 flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
+    <div class="text-center sm:text-left">
+      <p class="fira text-lg sm:text-xl font-semibold">
+        Nos clients nous recommanderaient
+      </p>
+      <p class="text-sm sm:text-base mt-2">
+        Avec une étude sur la satisfaction client, les résultats confirment que 96% de nos clients
+        nous recommanderaient.
+      </p>
+    </div>
+    <a class="text-white fira px-4 py-2 inline-block border-solid border-2 text-sm sm:text-base whitespace-nowrap mt-2 sm:mt-0"
+      href="#">
+      Demander un Devis
+    </a>
+  </section>
+
+
+  <!-- About Section -->
+  <section class="py-12">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col lg:flex-row items-center">
+        <img alt="About Image" class="w-full lg:w-1/2 h-auto object-cover rounded-lg shadow-lg" height="300"
+          src="https://res.cloudinary.com/dlwvryyiz/image/upload/v1741722314/Image_idts00.png" width="700">
+        <div class="lg:ml-12 mt-6 lg:mt-0 lg:text-left">
+          <h2 class="text-3xl lg:text-4xl fira text-[#1C768F] font-bold">
+            Qui Sommes Nous?
+          </h2>
+          <p class="mt-4 text-gray-700 fira text-2xl lg:text-3xl font-extrabold">
+            Through a vast selection of residential and commercial properties
+          </p>
+          <p class="mt-2 text-gray-700 text-base lg:text-lg">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+          <blockquote class="p-0 pl-4 my-4 border-s-4 border-[#1C768F]">
+            <p class="fira text-[#1C768F] text-lg lg:text-xl">Good Property Building</p>
+            <p class="text-sm lg:text-md font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          </blockquote>
+          <div class="mt-4">
+            <p class="text-gray-700 flex items-center  lg:justify-start">
+              <i class="fas fa-check text-[#1C768F] mr-2"></i>
+              Best Choicing Agency
+            </p>
+            <p class="text-gray-700 flex items-center  lg:justify-start mt-2">
+              <i class="fas fa-check text-[#1C768F] mr-2"></i>
+              More Than Real Estate Services
+            </p>
+          </div>
+          <a class="bg-[#FA991C] text-white px-6 py-3 fira text-lg lg:text-xl mt-6 inline-block rounded-lg shadow-md hover:bg-[#e0891b] transition duration-300"
+            href="#">
+            Être Appelé Par Un Expert
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- Method Section -->
+  <section class="py-12">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-2xl lg:text-3xl font-bold fira text-[#1C768F]">
+        Notre Méthode De Travail
+      </h2>
+      <p class="mt-4 text-gray-700 text-base lg:text-lg">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore
+        et dolore magna.
+      </p>
+      <p class="mt-2 text-gray-700 text-base lg:text-lg">
+        Aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut
+        labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipis.
+      </p>
+    </div>
+  </section>
+
+
+  <section class="py-12">
+    <div class="container text-center">
+      <h2 class="text-3xl font-bold fira text-[#1C768F]">
+        NOS ENGAGEMENTS
+      </h2>
+      <div class="flex flex-wrap justify-center gap-6 mt-10">
+        <div class="flex flex-col items-center fira font-medium text-gray-700"
+          style="flex: 1 1 240px; max-width: 241px;">
+          <i class="fas fa-check-circle text-[#FA991C] text-3xl mb-2"></i>
+          <p class="text-sm text-center">Devis Rapide et Gratuit</p>
+        </div>
+        <div class="flex flex-col items-center fira font-medium text-gray-700"
+          style="flex: 1 1 240px; max-width: 241px;">
+          <i class="fas fa-clock text-[#FA991C] text-3xl mb-2"></i>
+          <p class="text-sm text-center">Réactivité et Disponibilité</p>
+        </div>
+        <div class="flex flex-col items-center fira font-medium text-gray-700"
+          style="flex: 1 1 240px; max-width: 241px;">
+          <i class="fas fa-handshake text-[#FA991C] text-3xl mb-2"></i>
+          <p class="text-sm text-center">Respect des délais et transparence</p>
+        </div>
+        <div class="flex flex-col items-center fira font-medium text-gray-700"
+          style="flex: 1 1 240px; max-width: 241px;">
+          <i class="fas fa-user-tie text-[#FA991C] text-3xl mb-2"></i>
+          <p class="text-sm text-center">Seul et Unique Interlocuteur</p>
+        </div>
+        <div class="flex flex-col items-center fira font-medium text-gray-700"
+          style="flex: 1 1 240px; max-width: 241px;">
+          <i class="fas fa-tools text-[#FA991C] text-3xl mb-2"></i>
+          <p class="text-sm text-center">Contrôle qualité 3 mois après la fin du chantier</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
@@ -327,7 +335,7 @@
             <i class="fas fa-tools text-4xl"></i>
           </div>
           <h3 class="text-xl font-semibold mb-2">Rénovation Sols</h3>
-          
+
         </div>
 
         <!-- Menuiserie -->
@@ -336,7 +344,7 @@
             <i class="fas fa-home text-4xl"></i>
           </div>
           <h3 class="text-xl font-semibold mb-2">Menuiserie</h3>
-          
+
         </div>
 
         <!-- Isolation -->
@@ -345,7 +353,7 @@
             <i class="fas fa-layer-group text-4xl"></i>
           </div>
           <h3 class="text-xl font-semibold mb-2">Isolation</h3>
-          
+
         </div>
 
         <!-- Terrasse -->
@@ -354,7 +362,7 @@
             <i class="fas fa-hammer text-4xl"></i>
           </div>
           <h3 class="text-xl font-semibold mb-2">Terrasse</h3>
-          
+
         </div>
 
         <!-- Ferronnerie -->
@@ -363,7 +371,7 @@
             <i class="fas fa-wrench text-4xl"></i>
           </div>
           <h3 class="text-xl font-semibold mb-2">Ferronnerie</h3>
-          
+
         </div>
 
         <!-- Electricité -->
@@ -372,7 +380,7 @@
             <i class="fas fa-bolt text-4xl"></i>
           </div>
           <h3 class="text-xl font-semibold mb-2">Electricité</h3>
-          
+
         </div>
 
         <!-- Peinture -->
@@ -381,7 +389,7 @@
             <i class="fas fa-paint-roller text-4xl"></i>
           </div>
           <h3 class="text-xl font-semibold mb-2">Peinture</h3>
-          
+
         </div>
 
         <!-- Toiture -->
@@ -390,7 +398,7 @@
             <i class="fas fa-home text-4xl"></i>
           </div>
           <h3 class="text-xl font-semibold mb-2">Toiture</h3>
-          
+
         </div>
         <!-- Ferronnerie -->
         <div class="bg-white p-6 rounded-lg shadow-md">
@@ -398,7 +406,7 @@
             <i class="fas fa-wrench text-4xl"></i>
           </div>
           <h3 class="text-xl font-semibold mb-2">Ferronnerie</h3>
-          
+
         </div>
 
         <!-- Electricité -->
@@ -407,7 +415,7 @@
             <i class="fas fa-bolt text-4xl"></i>
           </div>
           <h3 class="text-xl font-semibold mb-2">Electricité</h3>
-          
+
         </div>
 
         <!-- Peinture -->
@@ -416,214 +424,195 @@
             <i class="fas fa-paint-roller text-4xl"></i>
           </div>
           <h3 class="text-xl font-semibold mb-2">Peinture</h3>
-          
+
         </div>
 
         <!-- Toiture -->
         <div class="bg-white p-6 rounded-lg shadow-md">
           <h3 class="text-xl font-semibold mb-2">Toiture</h3>
-          
+
         </div>
       </div>
     </div>
   </section>
 
   <!-- Realizations Section -->
-<!-- Realizations Section -->
-<section class="py-12 bg-[#032539] text-white text-center relative">
-  <div class="m-10">
-    <h1 class="text-3xl font-bold fira mb-10">NOS REALISATIONS</h1>
-    <p class="mb-10">GRÂCE À UN INTERLOCUTEUR UNIQUE, VOUS BÉNÉFICIEZ D'UN ÉCHANGE FLUIDE ET TRANSPARENT</p>
-    <div class="swiper multiple-slide-carousel swiper-container relative">
-      <div class="swiper-wrapper">
+  <section class="py-12 bg-[#032539] text-white text-center relative">
+    <div class="m-10">
+      <h1 class="text-3xl font-bold fira mb-10">NOS REALISATIONS</h1>
+      <p class="mb-10">GRÂCE À UN INTERLOCUTEUR UNIQUE, VOUS BÉNÉFICIEZ D'UN ÉCHANGE FLUIDE ET TRANSPARENT</p>
+      <div class="swiper multiple-slide-carousel swiper-container relative">
+        <div class="swiper-wrapper">
 
-        <!-- Slide 1 -->
-        <div class="swiper-slide flex justify-center items-center">
-          <div class="relative overflow-hidden group">
-            <img alt="Interior renovation with yellow wall and painting supplies"
-              class="w-72 h-96 object-cover transform transition-transform duration-500 group-hover:scale-110"
-              height="400" src="https://placehold.co/300x400" width="300" />
-            <div
-              class="absolute bottom-0 left-0 right-0 bg-white text-blue-900 p-4 overlay transform transition-transform duration-500 translate-y-full group-hover:translate-y-0">
-              <h3 class="font-bold">CRÉATION GARAGE EN BOIS À MONTAUBAN</h3>
-              <p>À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un
-                Double.</p>
+          <!-- Slide 1 -->
+          <div class="swiper-slide flex justify-center items-center">
+            <div class="relative overflow-hidden group">
+              <img alt="Interior renovation with yellow wall and painting supplies"
+                class="w-72 h-96 object-cover transform transition-transform duration-500 group-hover:scale-110"
+                height="400" src="https://placehold.co/300x400" width="300" />
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-white text-blue-900 p-4 overlay transform transition-transform duration-500 translate-y-full group-hover:translate-y-0">
+                <h3 class="font-bold">CRÉATION GARAGE EN BOIS À MONTAUBAN</h3>
+                <p>À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un
+                  Double.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide flex justify-center items-center">
+            <div class="relative overflow-hidden group">
+              <img alt="Interior renovation with yellow wall and painting supplies"
+                class="w-72 h-96 object-cover transform transition-transform duration-500 group-hover:scale-110"
+                height="400" src="https://placehold.co/300x400" width="300" />
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-white text-blue-900 p-4 overlay transform transition-transform duration-500 translate-y-full group-hover:translate-y-0">
+                <h3 class="font-bold">CRÉATION GARAGE EN BOIS À MONTAUBAN</h3>
+                <p>À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un
+                  Double.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide flex justify-center items-center">
+            <div class="relative overflow-hidden group">
+              <img alt="Interior renovation with yellow wall and painting supplies"
+                class="w-72 h-96 object-cover transform transition-transform duration-500 group-hover:scale-110"
+                height="400" src="https://placehold.co/300x400" width="300" />
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-white text-blue-900 p-4 overlay transform transition-transform duration-500 translate-y-full group-hover:translate-y-0">
+                <h3 class="font-bold">CRÉATION GARAGE EN BOIS À MONTAUBAN</h3>
+                <p>À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un
+                  Double.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide flex justify-center items-center">
+            <div class="relative overflow-hidden group">
+              <img alt="Interior renovation with yellow wall and painting supplies"
+                class="w-72 h-96 object-cover transform transition-transform duration-500 group-hover:scale-110"
+                height="400" src="https://placehold.co/300x400" width="300" />
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-white text-blue-900 p-4 overlay transform transition-transform duration-500 translate-y-full group-hover:translate-y-0">
+                <h3 class="font-bold">CRÉATION GARAGE EN BOIS À MONTAUBAN</h3>
+                <p>À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un
+                  Double.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="swiper-slide flex justify-center items-center">
+            <div class="relative overflow-hidden group">
+              <img alt="Interior renovation with yellow wall and painting supplies"
+                class="w-72 h-96 object-cover transform transition-transform duration-500 group-hover:scale-110"
+                height="400" src="https://placehold.co/300x400" width="300" />
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-white text-blue-900 p-4 overlay transform transition-transform duration-500 translate-y-full group-hover:translate-y-0">
+                <h3 class="font-bold">CRÉATION GARAGE EN BOIS À MONTAUBAN</h3>
+                <p>À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un
+                  Double.</p>
+              </div>
             </div>
           </div>
         </div>
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide flex justify-center items-center">
-          <div class="relative overflow-hidden group">
-            <img alt="Interior renovation with yellow wall and painting supplies"
-              class="w-72 h-96 object-cover transform transition-transform duration-500 group-hover:scale-110"
-              height="400" src="https://placehold.co/300x400" width="300" />
-            <div
-              class="absolute bottom-0 left-0 right-0 bg-white text-blue-900 p-4 overlay transform transition-transform duration-500 translate-y-full group-hover:translate-y-0">
-              <h3 class="font-bold">CRÉATION GARAGE EN BOIS À MONTAUBAN</h3>
-              <p>À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un
-                Double.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="swiper-slide flex justify-center items-center">
-          <div class="relative overflow-hidden group">
-            <img alt="Interior renovation with yellow wall and painting supplies"
-              class="w-72 h-96 object-cover transform transition-transform duration-500 group-hover:scale-110"
-              height="400" src="https://placehold.co/300x400" width="300" />
-            <div
-              class="absolute bottom-0 left-0 right-0 bg-white text-blue-900 p-4 overlay transform transition-transform duration-500 translate-y-full group-hover:translate-y-0">
-              <h3 class="font-bold">CRÉATION GARAGE EN BOIS À MONTAUBAN</h3>
-              <p>À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un
-                Double.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 4 -->
-        <div class="swiper-slide flex justify-center items-center">
-          <div class="relative overflow-hidden group">
-            <img alt="Interior renovation with yellow wall and painting supplies"
-              class="w-72 h-96 object-cover transform transition-transform duration-500 group-hover:scale-110"
-              height="400" src="https://placehold.co/300x400" width="300" />
-            <div
-              class="absolute bottom-0 left-0 right-0 bg-white text-blue-900 p-4 overlay transform transition-transform duration-500 translate-y-full group-hover:translate-y-0">
-              <h3 class="font-bold">CRÉATION GARAGE EN BOIS À MONTAUBAN</h3>
-              <p>À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un
-                Double.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 5 -->
-        <div class="swiper-slide flex justify-center items-center">
-          <div class="relative overflow-hidden group">
-            <img alt="Interior renovation with yellow wall and painting supplies"
-              class="w-72 h-96 object-cover transform transition-transform duration-500 group-hover:scale-110"
-              height="400" src="https://placehold.co/300x400" width="300" />
-            <div
-              class="absolute bottom-0 left-0 right-0 bg-white text-blue-900 p-4 overlay transform transition-transform duration-500 translate-y-full group-hover:translate-y-0">
-              <h3 class="font-bold">CRÉATION GARAGE EN BOIS À MONTAUBAN</h3>
-              <p>À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un
-                Double.</p>
-            </div>
-          </div>
-        </div>
-
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="swiper-pagination"></div>
     </div>
-  </div>
 
-  <!-- Navigation Buttons (Outside the Swiper Container) -->
-  <div
-    class="swiper-button-prev absolute left-4 top-1/2 transform -translate-y-1/2 z-10 text-white cursor-pointer hover:text-gray-300 transition-colors">
-    <i class="fas fa-chevron-left text-3xl mt-36"></i>
-  </div>
-  <div
-    class="swiper-button-next absolute right-4 top-1/2 transform -translate-y-1/2 z-10 text-white cursor-pointer hover:text-gray-300 transition-colors">
-    <i class="fas fa-chevron-right text-3xl mt-36"></i>
-  </div>
-</section>
+    <!-- Navigation Buttons (Outside the Swiper Container) -->
+    <div
+      class="swiper-button-prev absolute left-4 top-1/2 transform -translate-y-1/2 z-10 text-white cursor-pointer hover:text-gray-300 transition-colors">
+      <i class="fas fa-chevron-left text-3xl mt-36"></i>
+    </div>
+    <div
+      class="swiper-button-next absolute right-4 top-1/2 transform -translate-y-1/2 z-10 text-white cursor-pointer hover:text-gray-300 transition-colors">
+      <i class="fas fa-chevron-right text-3xl mt-36"></i>
+    </div>
+  </section>
 
-<!-- Initialize Swiper -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
-  const swiper = new Swiper('.multiple-slide-carousel', {
-    slidesPerView: 1, // Default for mobile
-    spaceBetween: 20, // Space between slides
-    loop: true, // Infinite loop
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-      // When window width is >= 640px (tablet)
-      640: {
-        slidesPerView: 2, // Show 2 slides on tablet
-      },
-      // When window width is >= 1024px (desktop)
-      1024: {
-        slidesPerView: 4, // Show 4 slides on desktop
-      },
-    },
-  });
-</script>
   <!-- Faqs section -->
-<section class="p-6 lg:p-12 flex flex-col lg:flex-row-reverse w-full gap-6">
-  <!-- First Part -->
-  <div class="w-full lg:w-1/2 p-4">
-    <div class="mt-5 ">
-      <div class="mb-8">
-        <h2 class="text-3xl font-bold fira text-[#1C768F] text-center lg:text-left ">QUESTIONS FRÉQUENTES</h2>
-        <h3 class="text-2xl font-bold text-[#032539] mt-2 text-center lg:text-left ">Common Queries Regarding Our Customer Support Services</h3>
-        <p class="mt-4 text-center lg:text-left ">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
-
-      <div class="flex flex-col gap-5 mt-5">
-        <!-- FAQ Item -->
-        <div class="border-b border-gray-200 py-4 bg-white shadow-md rounded-lg p-4">
-          <button class="flex justify-between items-center w-full text-left" onclick="toggleFaq(this)">
-            <span class="text-lg font-medium text-[#032539]">How to get consultation ?</span>
-            <svg class="w-5 h-5 text-[#1C768F] transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <div class="mt-2 hidden">
-            <p class="text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
+  <section class="p-6 lg:p-12 flex flex-col lg:flex-row-reverse w-full gap-6">
+    <!-- First Part -->
+    <div class="w-full lg:w-1/2 p-4">
+      <div class="mt-5 ">
+        <div class="mb-8">
+          <h2 class="text-3xl font-bold fira text-[#1C768F] text-center lg:text-left ">QUESTIONS FRÉQUENTES</h2>
+          <h3 class="text-2xl font-bold text-[#032539] mt-2 text-center lg:text-left ">Common Queries Regarding Our
+            Customer Support Services</h3>
+          <p class="mt-4 text-center lg:text-left ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+          </p>
         </div>
 
-        <!-- Additional FAQ Items -->
-        <div class="border-b border-gray-200 py-4 bg-white shadow-md rounded-lg p-4">
-          <button class="flex justify-between items-center w-full text-left" onclick="toggleFaq(this)">
-            <span class="text-lg font-medium text-[#032539]">How Long Working Time ?</span>
-            <svg class="w-5 h-5 text-[#1C768F] transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <div class="mt-2 hidden">
-            <p class="text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+        <div class="flex flex-col gap-5 mt-5">
+          <!-- FAQ Item -->
+          <div class="border-b border-gray-200 py-4 bg-white shadow-md rounded-lg p-4">
+            <button class="flex justify-between items-center w-full text-left" onclick="toggleFaq(this)">
+              <span class="text-lg font-medium text-[#032539]">How to get consultation ?</span>
+              <svg class="w-5 h-5 text-[#1C768F] transform transition-transform" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="mt-2 hidden">
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="border-b border-gray-200 py-4 bg-white shadow-md rounded-lg p-4">
-          <button class="flex justify-between items-center w-full text-left" onclick="toggleFaq(this)">
-            <span class="text-lg font-medium text-[#032539]">How Long Working Time ?</span>
-            <svg class="w-5 h-5 text-[#1C768F] transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <div class="mt-2 hidden">
-            <p class="text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+
+          <!-- Additional FAQ Items -->
+          <div class="border-b border-gray-200 py-4 bg-white shadow-md rounded-lg p-4">
+            <button class="flex justify-between items-center w-full text-left" onclick="toggleFaq(this)">
+              <span class="text-lg font-medium text-[#032539]">How Long Working Time ?</span>
+              <svg class="w-5 h-5 text-[#1C768F] transform transition-transform" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="mt-2 hidden">
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="border-b border-gray-200 py-4 bg-white shadow-md rounded-lg p-4">
+            <button class="flex justify-between items-center w-full text-left" onclick="toggleFaq(this)">
+              <span class="text-lg font-medium text-[#032539]">How Long Working Time ?</span>
+              <svg class="w-5 h-5 text-[#1C768F] transform transition-transform" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="mt-2 hidden">
+              <p class="text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Second Part -->
-  <div class="w-full lg:w-1/2 p-4">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+    <!-- Second Part -->
+    <div class="w-full lg:w-1/2 p-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
         <!-- Left Column -->
         <div class="col-span-1 flex flex-col gap-4">
           <div class="bg-gray-300 h-full p-4 flex flex-col justify-between md:p-7">
             <div>
               <svg width="32" height="39" viewBox="0 0 49 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.46 38.76L1.72 32.32C3.77333 31.9467 5.54667 31.06 7.04 29.66C8.62667 28.1667 9.93333 26.3467 10.96 24.2C11.9867 22.0533 12.6867 19.72 13.06 17.2H5.5L8.44 0.959993H23.98L21.46 15.66C20.5267 20.98 18.9867 25.2733 16.84 28.54C14.6933 31.8067 12.1733 34.2333 9.28 35.82C6.48 37.4067 3.54 38.3867 0.46 38.76ZM25.24 38.76L26.5 32.32C28.5533 31.9467 30.3733 31.06 31.96 29.66C33.5467 28.1667 34.8067 26.3467 35.74 24.2C36.7667 22.0533 37.4667 19.72 37.84 17.2H30.28L33.22 0.959993H48.76L46.24 15.66C45.3067 20.98 43.7667 25.2733 41.62 28.54C39.4733 31.8067 36.9533 34.2333 34.06 35.82C31.26 37.4067 28.32 38.3867 25.24 38.76Z" fill="#1C768F"/>
+                <path
+                  d="M0.46 38.76L1.72 32.32C3.77333 31.9467 5.54667 31.06 7.04 29.66C8.62667 28.1667 9.93333 26.3467 10.96 24.2C11.9867 22.0533 12.6867 19.72 13.06 17.2H5.5L8.44 0.959993H23.98L21.46 15.66C20.5267 20.98 18.9867 25.2733 16.84 28.54C14.6933 31.8067 12.1733 34.2333 9.28 35.82C6.48 37.4067 3.54 38.3867 0.46 38.76ZM25.24 38.76L26.5 32.32C28.5533 31.9467 30.3733 31.06 31.96 29.66C33.5467 28.1667 34.8067 26.3467 35.74 24.2C36.7667 22.0533 37.4667 19.72 37.84 17.2H30.28L33.22 0.959993H48.76L46.24 15.66C45.3067 20.98 43.7667 25.2733 41.62 28.54C39.4733 31.8067 36.9533 34.2333 34.06 35.82C31.26 37.4067 28.32 38.3867 25.24 38.76Z"
+                  fill="#1C768F" />
               </svg>
 
               <p class="mt-2">
@@ -632,142 +621,147 @@
             </div>
 
             <div class="mt-4">
-                <h4 class="text-lg font-semibold">Mohammed Latrach</h4>
-            </div>
-        </div>
-  
-        <div class="bg-gray-300 h-full p-4 flex flex-col justify-between md:p-7">
-          <div>
-            <svg width="32" height="39" viewBox="0 0 49 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.46 38.76L1.72 32.32C3.77333 31.9467 5.54667 31.06 7.04 29.66C8.62667 28.1667 9.93333 26.3467 10.96 24.2C11.9867 22.0533 12.6867 19.72 13.06 17.2H5.5L8.44 0.959993H23.98L21.46 15.66C20.5267 20.98 18.9867 25.2733 16.84 28.54C14.6933 31.8067 12.1733 34.2333 9.28 35.82C6.48 37.4067 3.54 38.3867 0.46 38.76ZM25.24 38.76L26.5 32.32C28.5533 31.9467 30.3733 31.06 31.96 29.66C33.5467 28.1667 34.8067 26.3467 35.74 24.2C36.7667 22.0533 37.4667 19.72 37.84 17.2H30.28L33.22 0.959993H48.76L46.24 15.66C45.3067 20.98 43.7667 25.2733 41.62 28.54C39.4733 31.8067 36.9533 34.2333 34.06 35.82C31.26 37.4067 28.32 38.3867 25.24 38.76Z" fill="#1C768F"/>
-            </svg>
-
-            <p class="mt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur assumenda error.
-            </p>
-          </div>
-
-          <div class="mt-4">
               <h4 class="text-lg font-semibold">Mohammed Latrach</h4>
+            </div>
           </div>
-      </div>
+
+          <div class="bg-gray-300 h-full p-4 flex flex-col justify-between md:p-7">
+            <div>
+              <svg width="32" height="39" viewBox="0 0 49 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.46 38.76L1.72 32.32C3.77333 31.9467 5.54667 31.06 7.04 29.66C8.62667 28.1667 9.93333 26.3467 10.96 24.2C11.9867 22.0533 12.6867 19.72 13.06 17.2H5.5L8.44 0.959993H23.98L21.46 15.66C20.5267 20.98 18.9867 25.2733 16.84 28.54C14.6933 31.8067 12.1733 34.2333 9.28 35.82C6.48 37.4067 3.54 38.3867 0.46 38.76ZM25.24 38.76L26.5 32.32C28.5533 31.9467 30.3733 31.06 31.96 29.66C33.5467 28.1667 34.8067 26.3467 35.74 24.2C36.7667 22.0533 37.4667 19.72 37.84 17.2H30.28L33.22 0.959993H48.76L46.24 15.66C45.3067 20.98 43.7667 25.2733 41.62 28.54C39.4733 31.8067 36.9533 34.2333 34.06 35.82C31.26 37.4067 28.32 38.3867 25.24 38.76Z"
+                  fill="#1C768F" />
+              </svg>
+
+              <p class="mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur assumenda error.
+              </p>
+            </div>
+
+            <div class="mt-4">
+              <h4 class="text-lg font-semibold">Mohammed Latrach</h4>
+            </div>
+          </div>
         </div>
-  
+
         <!-- Right Column -->
         <div class="col-span-1 md:col-span-1 lg:col-span-1 flex flex-col gap-4">
-            <div class="bg-gray-300 h-full p-4 flex flex-col justify-between md:p-7">
-                <div>
-                  <svg width="32" height="39" viewBox="0 0 49 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.46 38.76L1.72 32.32C3.77333 31.9467 5.54667 31.06 7.04 29.66C8.62667 28.1667 9.93333 26.3467 10.96 24.2C11.9867 22.0533 12.6867 19.72 13.06 17.2H5.5L8.44 0.959993H23.98L21.46 15.66C20.5267 20.98 18.9867 25.2733 16.84 28.54C14.6933 31.8067 12.1733 34.2333 9.28 35.82C6.48 37.4067 3.54 38.3867 0.46 38.76ZM25.24 38.76L26.5 32.32C28.5533 31.9467 30.3733 31.06 31.96 29.66C33.5467 28.1667 34.8067 26.3467 35.74 24.2C36.7667 22.0533 37.4667 19.72 37.84 17.2H30.28L33.22 0.959993H48.76L46.24 15.66C45.3067 20.98 43.7667 25.2733 41.62 28.54C39.4733 31.8067 36.9533 34.2333 34.06 35.82C31.26 37.4067 28.32 38.3867 25.24 38.76Z" fill="#1C768F"/>
-                  </svg>
+          <div class="bg-gray-300 h-full p-4 flex flex-col justify-between md:p-7">
+            <div>
+              <svg width="32" height="39" viewBox="0 0 49 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.46 38.76L1.72 32.32C3.77333 31.9467 5.54667 31.06 7.04 29.66C8.62667 28.1667 9.93333 26.3467 10.96 24.2C11.9867 22.0533 12.6867 19.72 13.06 17.2H5.5L8.44 0.959993H23.98L21.46 15.66C20.5267 20.98 18.9867 25.2733 16.84 28.54C14.6933 31.8067 12.1733 34.2333 9.28 35.82C6.48 37.4067 3.54 38.3867 0.46 38.76ZM25.24 38.76L26.5 32.32C28.5533 31.9467 30.3733 31.06 31.96 29.66C33.5467 28.1667 34.8067 26.3467 35.74 24.2C36.7667 22.0533 37.4667 19.72 37.84 17.2H30.28L33.22 0.959993H48.76L46.24 15.66C45.3067 20.98 43.7667 25.2733 41.62 28.54C39.4733 31.8067 36.9533 34.2333 34.06 35.82C31.26 37.4067 28.32 38.3867 25.24 38.76Z"
+                  fill="#1C768F" />
+              </svg>
 
-                  <p class="mt-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur assumenda error.
-                  </p>
-                </div>
-
-                <div class="mt-4">
-                    <h4 class="text-lg font-semibold">Mohammed Latrach</h4>
-                </div>
+              <p class="mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur assumenda error.
+              </p>
             </div>
-            <div class="bg-gray-300 p-4 text-gray-700 text-center h-24 md:h-36">
-                <blockquote class="italic">"Lorem ipsum dolor sit amet, consectetur adipiscing elit"</blockquote>
+
+            <div class="mt-4">
+              <h4 class="text-lg font-semibold">Mohammed Latrach</h4>
             </div>
-        </div>
-    </div>
-  </div>
-
-</section>
-
-
-
-  
-
-  <section class="py-12">
-      <h1 class="text-2xl font-bold text-center text-[#1C768F] mb-8">
-        NOS DERNIÈRES ACTUALITÉS
-      </h1>
-      <br>
-      <br>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-        <div class="bg-white shadow-lg overflow-hidden max-w-sm mx-auto">
-          <img alt="A large house with a well-maintained lawn and a clear blue sky" class="w-full h-56 object-cover"
-            height="400" src="https://storage.googleapis.com/a1aa/image/-SvyElSd5lwgWDYSbSP8PwBruTq9ORdjQgakMso_JtI.jpg"
-            width="600" />
-          <div class="p-6">
-            <h2 class="text-xl font-bold text-[#1C768F] mb-4">
-              CRÉATION GARAGE EN BOIS À MONTAUBAN
-            </h2>
-            <br>
-            <p class="text-gray-700 mb-6">
-              À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un Double
-              ...
-            </p>
-            <br>
-            <button class="bg-[#1C768F] text-white px-4 py-2 fira text-base">
-              VOIR PLUS
-            </button>
           </div>
-          <div class="px-6 py-4 border-t">
-            <p class="text-gray-600">
-              Mourad Nom | 01-04-2025
-            </p>
-          </div>
-        </div>
-        <div class="bg-white shadow-lg overflow-hidden max-w-sm mx-auto">
-          <img alt="A large house with a well-maintained lawn and a clear blue sky" class="w-full h-56 object-cover"
-            height="400" src="https://storage.googleapis.com/a1aa/image/-SvyElSd5lwgWDYSbSP8PwBruTq9ORdjQgakMso_JtI.jpg"
-            width="600" />
-          <div class="p-6">
-            <h2 class="text-xl font-bold text-[#1C768F] mb-4">
-              CRÉATION GARAGE EN BOIS À MONTAUBAN
-            </h2>
-            <br>
-            <p class="text-gray-700 mb-6">
-              À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un Double
-              ...
-            </p>
-            <br>
-            <button class="bg-[#1C768F] text-white px-4 py-2 fira text-base">
-              VOIR PLUS
-            </button>
-          </div>
-          <div class="px-6 py-4 border-t">
-            <p class="text-gray-600">
-              Mourad Nom | 01-04-2025
-            </p>
-          </div>
-        </div>
-        <div class="bg-white shadow-lg overflow-hidden max-w-sm mx-auto">
-          <img alt="A large house with a well-maintained lawn and a clear blue sky" class="w-full h-56 object-cover"
-            height="400" src="https://storage.googleapis.com/a1aa/image/-SvyElSd5lwgWDYSbSP8PwBruTq9ORdjQgakMso_JtI.jpg"
-            width="600" />
-          <div class="p-6">
-            <h2 class="text-xl font-bold text-[#1C768F] mb-4">
-              CRÉATION GARAGE EN BOIS À MONTAUBAN
-            </h2>
-            <br>
-            <p class="text-gray-700 mb-6">
-              À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un Double
-              ...
-            </p>
-            <br>
-            <button class="bg-[#1C768F] text-white px-4 py-2 fira text-base">
-              VOIR PLUS
-            </button>
-          </div>
-          <div class="px-6 py-4 border-t">
-            <p class="text-gray-600">
-              Mourad Nom | 01-04-2025
-            </p>
+          <div class="bg-gray-300 p-4 text-gray-700 text-center h-24 md:h-36">
+            <blockquote class="italic">"Lorem ipsum dolor sit amet, consectetur adipiscing elit"</blockquote>
           </div>
         </div>
       </div>
+    </div>
+
+  </section>
+
+
+
+
+
+  <section class="py-12">
+    <h1 class="text-2xl font-bold text-center text-[#1C768F] mb-8">
+      NOS DERNIÈRES ACTUALITÉS
+    </h1>
+    <br>
+    <br>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+      <div class="bg-white shadow-lg overflow-hidden max-w-sm mx-auto">
+        <img alt="A large house with a well-maintained lawn and a clear blue sky" class="w-full h-56 object-cover"
+          height="400" src="https://storage.googleapis.com/a1aa/image/-SvyElSd5lwgWDYSbSP8PwBruTq9ORdjQgakMso_JtI.jpg"
+          width="600" />
+        <div class="p-6">
+          <h2 class="text-xl font-bold text-[#1C768F] mb-4">
+            CRÉATION GARAGE EN BOIS À MONTAUBAN
+          </h2>
+          <br>
+          <p class="text-gray-700 mb-6">
+            À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un Double
+            ...
+          </p>
+          <br>
+          <button class="bg-[#1C768F] text-white px-4 py-2 fira text-base">
+            VOIR PLUS
+          </button>
+        </div>
+        <div class="px-6 py-4 border-t">
+          <p class="text-gray-600">
+            Mourad Nom | 01-04-2025
+          </p>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg overflow-hidden max-w-sm mx-auto">
+        <img alt="A large house with a well-maintained lawn and a clear blue sky" class="w-full h-56 object-cover"
+          height="400" src="https://storage.googleapis.com/a1aa/image/-SvyElSd5lwgWDYSbSP8PwBruTq9ORdjQgakMso_JtI.jpg"
+          width="600" />
+        <div class="p-6">
+          <h2 class="text-xl font-bold text-[#1C768F] mb-4">
+            CRÉATION GARAGE EN BOIS À MONTAUBAN
+          </h2>
+          <br>
+          <p class="text-gray-700 mb-6">
+            À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un Double
+            ...
+          </p>
+          <br>
+          <button class="bg-[#1C768F] text-white px-4 py-2 fira text-base">
+            VOIR PLUS
+          </button>
+        </div>
+        <div class="px-6 py-4 border-t">
+          <p class="text-gray-600">
+            Mourad Nom | 01-04-2025
+          </p>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg overflow-hidden max-w-sm mx-auto">
+        <img alt="A large house with a well-maintained lawn and a clear blue sky" class="w-full h-56 object-cover"
+          height="400" src="https://storage.googleapis.com/a1aa/image/-SvyElSd5lwgWDYSbSP8PwBruTq9ORdjQgakMso_JtI.jpg"
+          width="600" />
+        <div class="p-6">
+          <h2 class="text-xl font-bold text-[#1C768F] mb-4">
+            CRÉATION GARAGE EN BOIS À MONTAUBAN
+          </h2>
+          <br>
+          <p class="text-gray-700 mb-6">
+            À Montauban, Proche De Toulouse, CA Rénovation A Réalisé Une Extension Qui A Donné Naissance À Un Double
+            ...
+          </p>
+          <br>
+          <button class="bg-[#1C768F] text-white px-4 py-2 fira text-base">
+            VOIR PLUS
+          </button>
+        </div>
+        <div class="px-6 py-4 border-t">
+          <p class="text-gray-600">
+            Mourad Nom | 01-04-2025
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
 
 
   <footer class="w-full py-12 px-4 bg-[#1C768F] text-white fira">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:flex-wrap justify-between items-start md:items-center px-4">
+    <div
+      class="max-w-7xl mx-auto flex flex-col md:flex-row md:flex-wrap justify-between items-start md:items-center px-4">
       <div class="mb-8 md:mb-0 p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
         <h1 class="text-5xl font-bold mb-4">Logo</h1>
         <p class="text-xl font-semibold mb-4">Création Garage En Bois À Montauban</p>
@@ -781,11 +775,16 @@
       <div class="mb-8 md:mb-0 p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
         <h2 class="text-xl font-bold mb-4">Quick Links</h2>
         <ul>
-          <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Home</a></li>
-          <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>About Us</a></li>
-          <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Our Team Work</a></li>
-          <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Services</a></li>
-          <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Work Gallery</a></li>
+          <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Home</a>
+          </li>
+          <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>About Us</a>
+          </li>
+          <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Our Team
+              Work</a></li>
+          <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Services</a>
+          </li>
+          <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Work
+              Gallery</a></li>
         </ul>
       </div>
       <div class="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
@@ -802,6 +801,33 @@
     </div>
   </footer>
 
+   <!-- Initialize Swiper -->
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script>
+     const swiper = new Swiper('.multiple-slide-carousel', {
+       slidesPerView: 1, // Default for mobile
+       spaceBetween: 20, // Space between slides
+       loop: true, // Infinite loop
+       pagination: {
+         el: '.swiper-pagination',
+         clickable: true,
+       },
+       navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+       },
+       breakpoints: {
+         // When window width is >= 640px (tablet)
+         640: {
+           slidesPerView: 2, // Show 2 slides on tablet
+         },
+         // When window width is >= 1024px (desktop)
+         1024: {
+           slidesPerView: 4, // Show 4 slides on desktop
+         },
+       },
+     });
+   </script>
 
   <script>
     // Mobile menu toggle
@@ -854,41 +880,43 @@
     //     clickable: true,
     //   },
     // });
+
+    
   </script>
   <script>
     // Carousel functionality
     let currentSlide = 0;
     const slides = document.querySelectorAll('.carousel-slides img');
     const dots = document.querySelectorAll('.dot');
-    
+
     function showSlide(index) {
       slides.forEach(slide => slide.classList.remove('opacity-100'));
       slides.forEach(slide => slide.classList.add('opacity-0'));
       dots.forEach(dot => dot.classList.remove('active'));
-      
+
       slides[index].classList.remove('opacity-0');
       slides[index].classList.add('opacity-100');
       dots[index].classList.add('active');
       currentSlide = index;
     }
-    
+
     function nextSlide() {
       const next = (currentSlide + 1) % slides.length;
       showSlide(next);
     }
-    
+
     function prevSlide() {
       const prev = (currentSlide - 1 + slides.length) % slides.length;
       showSlide(prev);
     }
-    
+
     function goToSlide(index) {
       showSlide(index);
     }
-    
+
     // Auto advance slides every 5 seconds
     setInterval(nextSlide, 5000);
-    
+
     // Initialize first slide
     showSlide(0);
   </script>
