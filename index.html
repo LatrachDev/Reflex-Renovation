@@ -823,6 +823,45 @@
   </section>
 
 
+  <div class="fixed bottom-6 right-6 z-50">
+    <button onclick="toggleWhatsAppForm()" style="border-radius: 50%;" class="bg-green-500 hover:bg-green-600 text-white p-4 shadow-lg transition-all duration-300 flex items-center justify-center w-16 h-16">
+      <i class="fab fa-whatsapp text-2xl"></i>
+    </button>
+    <div id="whatsappForm" class="hidden absolute bottom-16 right-0 bg-white rounded-lg shadow-xl w-80 p-4 transform transition-all duration-300">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="text-lg font-semibold text-gray-800">Send WhatsApp Message</h3>
+        <button onclick="toggleWhatsAppForm()" class="text-gray-500 hover:text-gray-700">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <textarea id="whatsappMessage" class="w-full p-2 border border-gray-300 rounded-lg mb-4 h-32 resize-none focus:outline-none focus:border-green-500" placeholder="Type your message here..."></textarea>
+      <button onclick="sendWhatsAppMessage()" class="w-full bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg transition-all duration-300 flex items-center justify-center">
+        <i class="fab fa-whatsapp mr-2"></i>
+        Send Message
+      </button>
+    </div>
+  </div>
+
+  <script>
+    function toggleWhatsAppForm() {
+      const form = document.getElementById('whatsappForm');
+      form.classList.toggle('hidden');
+    }
+
+    function sendWhatsAppMessage() {
+      const message = document.getElementById('whatsappMessage').value;
+      if (message.trim() !== '') {
+        const phoneNumber = '212645338599';
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+        window.open(whatsappURL, '_blank');
+        
+        document.getElementById('whatsappMessage').value = '';
+        toggleWhatsAppForm();
+      }
+    }
+  </script>
+
   <footer class="w-full py-12 px-4 bg-[#1C768F] text-white fira">
     <div
       class="max-w-7xl mx-auto flex flex-col md:flex-row md:flex-wrap justify-between items-start md:items-center px-4">
