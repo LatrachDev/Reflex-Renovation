@@ -119,10 +119,10 @@
 
         <!-- Desktop Navigation -->
         <div class="hidden lg:flex items-center space-x-8">
-          <a class="text-gray-700 hover:text-gray-900" href="#">Accueil</a>
-          <a class="text-gray-700 hover:text-gray-900" href="#">Qui Sommes Nous</a>
-          <a class="text-gray-700 hover:text-gray-900" href="#">Nos Réalisations</a>
-          <a class="text-gray-700 hover:text-gray-900" href="#">Nos Compétences</a>
+          <a class="text-gray-700 hover:text-gray-900" href="index.html">Accueil</a>
+          <a class="text-gray-700 hover:text-gray-900" href="#quinous">Qui Sommes Nous</a>
+          <a class="text-gray-700 hover:text-gray-900" href="#nousreal">Nos Réalisations</a>
+          <a class="text-gray-700 hover:text-gray-900" href="#noscomp">Nos Compétences</a>
           <a class="text-gray-700 hover:text-gray-900" href="blog.html">Blog</a>
         </div>
         <a class="bg-[#FA991C] text-white px-4 py-2 fira hidden lg:block" href="#">demander un devis</a>
@@ -237,7 +237,7 @@
         src="https://res.cloudinary.com/dlwvryyiz/image/upload/v1741722314/Image_idts00.png">
       
       <!-- Text Content -->
-      <div class="lg:w-1/2 flex flex-col justify-around h-full ml-20 lg:pl-12">
+      <div id="quinous" class="lg:w-1/2 flex flex-col justify-around h-full ml-20 lg:pl-12">
         <div>
           <h2 class="text-3xl lg:text-4xl mt-6 md:mt-6 lg:mt-0 fira text-[#1C768F] font-bold">
             Qui Sommes Nous?
@@ -250,8 +250,7 @@
           </p>
           <!-- Need Text -->
           <blockquote class="p-0 pl-4 my-4 border-s-4 border-[#1C768F]">
-            <p class="fira text-[#1C768F] text-lg lg:text-xl">Good Property Building</p>
-            <p class="text-sm lg:text-md font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <p class="fira text-[#1C768F] text-lg lg:text-xl">Bon immeuble</p>
           </blockquote>
           <div class="mt-4">
             <p class="text-gray-700 flex items-center">
@@ -324,6 +323,42 @@
     </div>
   </section>
 
+
+  
+  <section class="py-12">
+    <div class="container text-center">
+      <h2 class="text-3xl font-bold fira text-[#1C768F]">
+        NOS ENGAGEMENTS
+      </h2>
+      <div class="flex flex-wrap justify-center gap-6 mt-10">
+        <div class="flex flex-col items-center fira font-medium text-gray-700"
+          style="flex: 1 1 240px; max-width: 241px;">
+          <i class="fas fa-check-circle text-[#FA991C] text-3xl mb-2"></i>
+          <p class="text-sm text-center">Devis Rapide et Gratuit</p>
+        </div>
+        <div class="flex flex-col items-center fira font-medium text-gray-700"
+          style="flex: 1 1 240px; max-width: 241px;">
+          <i class="fas fa-clock text-[#FA991C] text-3xl mb-2"></i>
+          <p class="text-sm text-center">Réactivité et Disponibilité</p>
+        </div>
+        <div class="flex flex-col items-center fira font-medium text-gray-700"
+          style="flex: 1 1 240px; max-width: 241px;">
+          <i class="fas fa-handshake text-[#FA991C] text-3xl mb-2"></i>
+          <p class="text-sm text-center">Respect des délais et transparence</p>
+        </div>
+        <div class="flex flex-col items-center fira font-medium text-gray-700"
+          style="flex: 1 1 240px; max-width: 241px;">
+          <i class="fas fa-user-tie text-[#FA991C] text-3xl mb-2"></i>
+          <p class="text-sm text-center">Seul et Unique Interlocuteur</p>
+        </div>
+        <div class="flex flex-col items-center fira font-medium text-gray-700"
+          style="flex: 1 1 240px; max-width: 241px;">
+          <i class="fas fa-tools text-[#FA991C] text-3xl mb-2"></i>
+          <p class="text-sm text-center">Contrôle qualité 3 mois après la fin du chantier</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Competence Section -->
   <section class="py-12 ">
@@ -442,7 +477,7 @@
   </section>
 
   <!-- Realizations Section -->
-  <section class="py-12 bg-[#032539] text-white text-center relative">
+  <section id="#nousreal" class="py-12 bg-[#032539] text-white text-center relative">
     <div class="m-10">
       <h1 class="text-3xl font-bold fira mb-10">NOS REALISATIONS</h1>
       <p class="mb-10">GRÂCE À UN INTERLOCUTEUR UNIQUE, VOUS BÉNÉFICIEZ D'UN ÉCHANGE FLUIDE ET TRANSPARENT</p>
@@ -541,7 +576,7 @@
   </section>
 
   <!-- Faqs section -->
-  <section class="p-6 lg:p-12 flex flex-col lg:flex-row-reverse w-full gap-6">
+  <section id="#noscomp" class="p-6 lg:p-12 flex flex-col lg:flex-row-reverse w-full gap-6">
     <!-- First Part -->
     <div class="w-full lg:w-1/2 p-4">
       <div class="mt-5 ">
