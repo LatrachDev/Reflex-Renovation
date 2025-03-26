@@ -74,7 +74,7 @@
             <h2 class="text-xl font-bold mb-6 text-[#ffa500]">CONTACT</h2>
             <h3 class="text-lg mb-4">DEMANDEZ VOTRE DEVIS TRAVAUX DÈS MAINTENANT !</h3>
             
-            <form id="contactForm" action="https://formspree.io/f/xwplbdpq" method="POST" class="space-y-4">
+            <form id="contactForm" action="https://submit-form.com/nipdaJ8ku" method="POST" class="space-y-4">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <input type="text" name="name" placeholder="Nom Complet*" class="w-full p-3 bg-white text-black" required>
                     <input type="tel" name="phone" placeholder="Numéro de téléphone*" class="w-full p-3 bg-white text-black" pattern="[0-9]+" required>
@@ -138,7 +138,7 @@
                 const form = document.getElementById('contactForm');
                 const phone = form.querySelector('input[name="phone"]');
                 
-                const phoneRegex = /^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$/;
+                const phoneRegex = /^\d{9,}$/;
                 if (!phoneRegex.test(phone.value)) {
                     alert('Veuillez entrer un numéro de téléphone valide');
                     return false;
@@ -161,12 +161,15 @@
                 submitButton.disabled = true;
                 submitButton.innerHTML = 'Envoi en cours...';
 
-                var data = new FormData(event.target);
+                var formData = new FormData(event.target);
+                var data = Object.fromEntries(formData.entries());
+                
                 fetch(event.target.action, {
                     method: form.method,
-                    body: data,
+                    body: JSON.stringify(data),
                     headers: {
-                        'Accept': 'application/json'
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
                     }
                 }).then(response => {
                     if (response.ok) {
