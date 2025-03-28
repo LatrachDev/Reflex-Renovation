@@ -14,236 +14,285 @@
 </head>
 <body class="bg-gray-100">
     
-    
-      <!-- Navigation -->
-      <nav class="bg-white shadow">
-        <div class="container mx-auto px-12 py-4">
-          <div class="flex items-center justify-between">
-            <div class="flex items-center">
-              <img alt="Logo" class="h-12" height="50" src="" width="100">
-            </div>
-    
-            <!-- Mobile & Tablet menu button -->
-            <div class="lg:hidden">
-              <button id="mobile-menu-button" class="text-gray-700 hover:text-gray-900 focus:outline-none">
-                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-              </button>
-            </div>
-    
-            <!-- Desktop Navigation -->
-            <div class="hidden lg:flex items-center space-x-8">
-              <a class="text-gray-700 hover:text-gray-900" href="index.html">Accueil</a>
-              <a class="text-gray-700 hover:text-gray-900" href="index.html">Qui Sommes Nous</a>
-              <a class="text-gray-700 hover:text-gray-900" href="index.html">Nos Réalisations</a>
-              <a class="text-gray-700 hover:text-gray-900" href="index.html">Nos Compétences</a>
-              <a class="text-gray-700 hover:text-gray-900" href="blog.html">Blog</a>
-            </div>
-            <a class="bg-[#FA991C] text-white px-4 py-2 fira inline-block w-fit" href="#"><i class="fa-solid fa-phone"></i>+33 123 456 789</a>
-          </div>
-    
-          <!-- Mobile & Tablet Navigation -->
-          <div id="mobile-menu" class="hidden lg:hidden mt-4">
-            <div class="flex flex-col space-y-4">
-              <a class="text-gray-700 hover:text-gray-900" href="#">Accueil</a>
-              <a class="text-gray-700 hover:text-gray-900" href="#">Qui Sommes Nous</a>
-              <a class="text-gray-700 hover:text-gray-900" href="#">Nos Réalisations</a>
-              <a class="text-gray-700 hover:text-gray-900" href="#">Nos Compétences</a>
-              <a class="text-gray-700 hover:text-gray-900" href="blog.html">Blog</a>
-              <a class="bg-[#FA991C] text-white px-4 py-2 fira inline-block w-fit" href="#"><i class="fa-solid fa-phone"></i>+33 123 456 789</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    <div class="container mx-auto flex flex-col md:flex-row">
-       
-        <div class="w-1/2 h-screen bg-white shadow-lg">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11547.417298078186!2d1.504556!3d43.6511991!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aea294705b561b%3A0x57cd832c89207a2f!2sReflex%20Renovation!5e0!3m2!1sen!2sma!4v1743034519433!5m2!1sen!2sma"
-                width="100%" 
-                height="100%" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy">
-            </iframe>
-        </div>
+  <!-- Header -->
+  <header class="bg-[#1C768F] text-white">
+    <div class="container mx-auto flex justify-between items-center py-4 px-12">
 
-        <!-- Contact Form Section -->
-        <div class="w-screen md:w-1/2 bg-[#0a192f] text-white p-8">
-            <h2 class="text-xl font-bold mb-6 text-[#ffa500]">CONTACT</h2>
-            <h3 class="text-lg mb-4">DEMANDEZ VOTRE DEVIS TRAVAUX DÈS MAINTENANT !</h3>
-            
-            <form id="contactForm" action="https://formspree.io/f/xwplbdpq" method="POST" class="space-y-4">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <input type="text" name="name" placeholder="Nom Complet*" class="w-full p-3 bg-white text-black" required>
-                    <input type="tel" name="phone" placeholder="Numéro de téléphone*" class="w-full p-3 bg-white text-black" pattern="[0-9]+" required>
-                </div>
-                
-                <input type="email" name="email" placeholder="Email*" class="w-full p-3 bg-white text-black" required>
-                
-                <div class="space-y-2">
-                    <p class="font-semibold">JE SUIS INTÉRESSÉ PAR:</p>
-                    <div class="flex flex-wrap gap-2">
-                        <label class="relative interest-label">
-                            <input type="radio" name="interest" value="Salle De Bain" class="absolute opacity-0 w-full h-full cursor-pointer peer" required>
-                            <span class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Salle De Bain</span>
-                        </label>
-                        <label class="relative interest-label">
-                            <input type="radio" name="interest" value="Cuisine" class="absolute opacity-0 w-full h-full cursor-pointer peer">
-                            <span class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Cuisine</span>
-                        </label>
-                        <label class="relative interest-label">
-                            <input type="radio" name="interest" value="Isolation" class="absolute opacity-0 w-full h-full cursor-pointer peer">
-                            <span class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Isolation</span>
-                        </label>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <label class="relative interest-label">
-                            <input type="radio" name="interest" value="Gros Oeuvre" class="absolute opacity-0 w-full h-full cursor-pointer peer">
-                            <span class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Gros Oeuvre (Extension, Construction, Piscine...)</span>
-                        </label>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <label class="relative interest-label">
-                            <input type="radio" name="interest" value="Rénovation Intérieure" class="absolute opacity-0 w-full h-full cursor-pointer peer">
-                            <span class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Rénovation Intérieure (Placo, Peinture, Parquet, Electricité, Carrelage...)</span>
-                        </label>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <label class="relative interest-label">
-                            <input type="radio" name="interest" value="Rénovation Extérieure" class="absolute opacity-0 w-full h-full cursor-pointer peer">
-                            <span class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Rénovation Extérieure (Terrasse, Pergola, Façade, Jardin, Menuiserie...)</span>
-                        </label>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <label class="relative interest-label">
-                            <input type="radio" name="interest" value="Autres Types De Travaux" class="absolute opacity-0 w-full h-full cursor-pointer peer">
-                            <span class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Autres Types De Travaux...</span>
-                        </label>
-                    </div>
-                </div>
+      <div class="flex items-center space-x-2">
 
-                <textarea name="message" placeholder="Votre message*" class="w-full p-3 bg-white text-black h-32" required></textarea>
-                
-                <p id="form-status" class="text-green-400 mb-2 hidden"></p>
+        <p class="text-xs md:text-sm">Contactez-Nous</p>
+        <span>|</span>
+        <a class="text-xs md:text-sm" href="tel:+212645454544">+33 9 87 65 43 21</a>
 
-                <button type="submit" class="bg-[#FA991C] text-white px-6 py-3 hover:bg-[#e88b0c] transition" id="submitButton">
-                    Envoyer
-                </button>
-            </form>
+      </div>
 
-            <script>
-            function validateForm() {
-                const form = document.getElementById('contactForm');
-                const phone = form.querySelector('input[name="phone"]');
-                
-                const phoneRegex = /^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$/;
-                if (!phoneRegex.test(phone.value)) {
-                    alert('Veuillez entrer un numéro de téléphone valide');
-                    return false;
-                }
-                
-                return true;
-            }
+      <div class="flex items-center space-x-4">
 
-            var form = document.getElementById("contactForm");
-            
-            async function handleSubmit(event) {
-                event.preventDefault();
-                
-                if (!validateForm()) {
-                    return;
-                }
+        <a class="text-xs md:text-sm" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a class="text-xs md:text-sm" href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+        <a class="text-xs md:text-sm" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
 
-                var status = document.getElementById("form-status");
-                var submitButton = document.getElementById("submitButton");
-                submitButton.disabled = true;
-                submitButton.innerHTML = 'Envoi en cours...';
+      </div>
 
-                var data = new FormData(event.target);
-                fetch(event.target.action, {
-                    method: form.method,
-                    body: data,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                }).then(response => {
-                    if (response.ok) {
-                        status.innerHTML = "Votre message a été envoyé avec succès!";
-                        status.classList.remove('hidden');
-                        status.classList.remove('text-red-400');
-                        status.classList.add('text-green-400');
-                        form.reset();
-                    } else {
-                        response.json().then(data => {
-                            if (Object.hasOwn(data, 'errors')) {
-                                status.innerHTML = data["errors"].map(error => error["message"]).join(", ");
-                            } else {
-                                status.innerHTML = "Une erreur s'est produite. Veuillez réessayer.";
-                            }
-                            status.classList.remove('hidden');
-                            status.classList.remove('text-green-400');
-                            status.classList.add('text-red-400');
-                        })
-                    }
-                }).catch(error => {
-                    status.innerHTML = "Une erreur s'est produite. Veuillez réessayer.";
-                    status.classList.remove('hidden');
-                    status.classList.remove('text-green-400');
-                    status.classList.add('text-red-400');
-                }).finally(() => {
-                    submitButton.disabled = false;
-                    submitButton.innerHTML = 'Envoyer';
-                });
-            }
-
-            form.addEventListener("submit", handleSubmit);
-            </script>
-        </div>
     </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow">
+    <div class="container mx-auto px-12 py-4">
+      <div class="flex items-center justify-between">
+        <a href="index.html" class="flex items-center">
+          <img alt="Logo" class="h-12" height="50" src="" width="100">
+        </a>
+
+        <!-- Mobile & Tablet menu button -->
+        <div class="lg:hidden">
+          <button id="mobile-menu-button" class="text-gray-700 hover:text-gray-900 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden lg:flex items-center space-x-8">
+          <a class="text-gray-700 hover:text-gray-900" href="index.html">Accueil</a>
+          <a class="text-gray-700 hover:text-gray-900" href="#quinous">Qui Sommes Nous</a>
+          <a class="text-gray-700 hover:text-gray-900" href="#nousrealisation">Nos Réalisations</a>
+          <a class="text-gray-700 hover:text-gray-900" href="#competance">Nos Compétences</a>
+          <a class="text-gray-700 hover:text-gray-900" href="blog.html">Blog</a>
+        </div>
+        <a class="bg-[#FA991C] text-white px-4 py-2 fira hidden lg:block" href="form.html">demander un devis</a>
+      </div>
+
+      <!-- Mobile & Tablet Navigation -->
+      <div id="mobile-menu" class="hidden lg:hidden mt-4">
+        <div class="flex flex-col space-y-10 h-screen text-center font-semibold">
+          <a class="text-gray-700 hover:text-gray-900" href="index.html">Accueil</a>
+          <a class="text-gray-700 hover:text-gray-900" href="#quinous">Qui Sommes Nous</a>
+          <a class="text-gray-700 hover:text-gray-900" href="#nousrealisation">Nos Réalisations</a>
+          <a class="text-gray-700 hover:text-gray-900" href="#competance">Nos Compétences</a>
+          <a class="text-gray-700 hover:text-gray-900" href="blog.html">Blog</a>
+          <a class="bg-[#FA991C] w-full text-center rounded-md mx-auto  text-white px-4 py-2 fira inline-block" href="form.html">demander un devis</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="w-full flex flex-col-reverse md:flex-row">
+    <!-- Map Section -->
+    <div class="w-full md:w-1/2 min-h-full bg-white shadow-lg">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11547.417298078186!2d1.504556!3d43.6511991!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aea294705b561b%3A0x57cd832c89207a2f!2sReflex%20Renovation!5e0!3m2!1sen!2sma!4v1743034519433!5m2!1sen!2sma"
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="w-full md:w-1/2 bg-[#0a192f] text-white p-8">
+        <h2 class="text-xl font-bold mb-6 text-[#ffa500]">CONTACT</h2>
+        <h3 class="text-lg mb-4">DEMANDEZ VOTRE DEVIS TRAVAUX DÈS MAINTENANT !</h3>
+        
+        <form id="contactForm" action="https://formspree.io/f/xwplbdpq" method="POST" class="space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input type="text" name="name" placeholder="Nom Complet*" class="w-full p-3 bg-white text-black" required>
+                <input type="tel" name="phone" placeholder="Numéro de téléphone*" class="w-full p-3 bg-white text-black" pattern="[0-9]+" required>
+            </div>
+            
+            <input type="email" name="email" placeholder="Email*" class="w-full p-3 bg-white text-black" required>
+            
+            <div class="space-y-2">
+                <p class="font-semibold">JE SUIS INTÉRESSÉ PAR:</p>
+                <div class="flex flex-wrap gap-2">
+                    <label class="relative interest-label">
+                        <input type="radio" name="interest" value="Salle De Bain" class="absolute opacity-0 w-full h-full cursor-pointer peer" required>
+                        <span class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Salle De Bain</span>
+                    </label>
+                    <label class="relative interest-label">
+                        <input type="radio" name="interest" value="Cuisine" class="absolute opacity-0 w-full h-full cursor-pointer peer">
+                        <span class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Cuisine</span>
+                    </label>
+                    <label class="relative interest-label">
+                        <input type="radio" name="interest" value="Isolation" class="absolute opacity-0 w-full h-full cursor-pointer peer">
+                        <span class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Isolation</span>
+                    </label>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <label class="relative interest-label">
+                        <input type="radio" name="interest" value="Gros Oeuvre" class="absolute opacity-0 w-full h-full cursor-pointer peer">
+                        <span class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Gros Oeuvre (Extension, Construction, Piscine...)</span>
+                    </label>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <label class="relative interest-label">
+                        <input type="radio" name="interest" value="Rénovation Intérieure" class="absolute opacity-0 w-full h-full cursor-pointer peer">
+                        <span class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Rénovation Intérieure (Placo, Peinture, Parquet, Electricité, Carrelage...)</span>
+                    </label>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <label class="relative interest-label">
+                        <input type="radio" name="interest" value="Rénovation Extérieure" class="absolute opacity-0 w-full h-full cursor-pointer peer">
+                        <span class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Rénovation Extérieure (Terrasse, Pergola, Façade, Jardin, Menuiserie...)</span>
+                    </label>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <label class="relative interest-label">
+                        <input type="radio" name="interest" value="Autres Types De Travaux" class="absolute opacity-0 w-full h-full cursor-pointer peer">
+                        <span class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Autres Types De Travaux...</span>
+                    </label>
+                </div>
+            </div>
+
+            <textarea name="message" placeholder="Votre message*" class="w-full p-3 bg-white text-black h-32" required></textarea>
+            
+            <p id="form-status" class="text-green-400 mb-2 hidden"></p>
+
+            <button type="submit" class="bg-[#FA991C] text-white px-6 py-3 hover:bg-[#e88b0c] transition" id="submitButton">
+                Envoyer
+            </button>
+        </form>
+
+        <script>
+        function validateForm() {
+            const form = document.getElementById('contactForm');
+            const phone = form.querySelector('input[name="phone"]');
+            
+            const phoneRegex = /^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$/;
+            if (!phoneRegex.test(phone.value)) {
+                alert('Veuillez entrer un numéro de téléphone valide');
+                return false;
+            }
+            
+            return true;
+        }
+
+        var form = document.getElementById("contactForm");
+        
+        async function handleSubmit(event) {
+            event.preventDefault();
+            
+            if (!validateForm()) {
+                return;
+            }
+
+            var status = document.getElementById("form-status");
+            var submitButton = document.getElementById("submitButton");
+            submitButton.disabled = true;
+            submitButton.innerHTML = 'Envoi en cours...';
+
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    status.innerHTML = "Votre message a été envoyé avec succès!";
+                    status.classList.remove('hidden');
+                    status.classList.remove('text-red-400');
+                    status.classList.add('text-green-400');
+                    form.reset();
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+                        } else {
+                            status.innerHTML = "Une erreur s'est produite. Veuillez réessayer.";
+                        }
+                        status.classList.remove('hidden');
+                        status.classList.remove('text-green-400');
+                        status.classList.add('text-red-400');
+                    })
+                }
+            }).catch(error => {
+                status.innerHTML = "Une erreur s'est produite. Veuillez réessayer.";
+                status.classList.remove('hidden');
+                status.classList.remove('text-green-400');
+                status.classList.add('text-red-400');
+            }).finally(() => {
+                submitButton.disabled = false;
+                submitButton.innerHTML = 'Envoyer';
+            });
+        }
+
+        form.addEventListener("submit", handleSubmit);
+        </script>
+    </div>
+</div>
     
     <footer class="w-full py-12 px-4 bg-[#1C768F] text-white fira">
-      <div
-        class="max-w-7xl mx-auto flex flex-col md:flex-row md:flex-wrap justify-between items-start px-4">
-        <div class="mb-8 md:mb-0 p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-          <h1 class="text-5xl font-bold mb-4">Logo</h1>
-          <p class="text-xl font-semibold mb-4">Création Garage En Bois À Montauban</p>
-          <div class="flex space-x-4">
-            <a href="#" class="text-white text-2xl"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="text-white text-2xl"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="text-white text-2xl"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="text-white text-2xl"><i class="fab fa-linkedin"></i></a>
+        <div
+          class="max-w-7xl mx-auto flex flex-col md:flex-row md:flex-wrap justify-between items-start px-4">
+          <div class="mb-8 md:mb-0 p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+            <h1 class="text-5xl font-bold mb-4">Logo</h1>
+            <p class="text-xl font-semibold mb-4">Création Garage En Bois À Montauban</p>
+            <div class="flex space-x-3 items-start w-12 sm:w-14 md:w-10">
+              <img class="rounded-full bg-white p-1" src="logo acridite/1.png" alt="logo acridite">
+              <img class="rounded-full bg-white p-1" src="logo acridite/2.png" alt="logo acridite">
+              <img class="rounded-full bg-white p-1" src="logo acridite/3.png" alt="logo acridite">
+              <img class="rounded-full bg-white p-1" src="logo acridite/4.png" alt="logo acridite">
+    
+            </div>
+          </div>
+    
+          <div class="mb-8 md:mb-0 p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+            <h2 class="text-xl font-bold mb-4">Quick Links</h2>
+            <ul>
+              <li class="mb-2"><a href="index.html" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Home</a>
+              </li>
+              <li class="mb-2"><a href="#about" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>About Us</a>
+              </li>
+              <li class="mb-2"><a href="#nousrealisation" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Nos Réalisations</a></li>
+              <li class="mb-2"><a href="#competance" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Nos Compétences</a>
+              </li>
+              <li class="mb-2"><a href="blog.html" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Blog</a></li>
+            </ul>
+          </div>
+          <div class="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4" style="margin-bottom: 3rem;">
+            <h2 class="text-xl font-bold mb-4">Stay Tuned With Us</h2>
+            <ul>
+              <li class="mb-2 font-light"><i class="fas fa-map-marker-alt mr-2"></i>Casablanca-Morocco</li>
+              <li class="mb-2 font-light"><i class="fas fa-envelope mr-2"></i>Hello@Email.com</li>
+              <li class="mb-2 font-light"><i class="fas fa-phone mr-2"></i>07 000000000</li>
+            </ul>
+    
+            <div class="flex space-x-4 mt-4">
+              <a href="#" class="text-white text-2xl"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="text-white text-2xl"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white text-2xl"><i class="fab fa-linkedin"></i></a>
+            </div>
+    
           </div>
         </div>
-        <div class="mb-8 md:mb-0 p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-          <h2 class="text-xl font-bold mb-4">Quick Links</h2>
-          <ul>
-            <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Home</a>
-            </li>
-            <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>About Us</a>
-            </li>
-            <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Our Team
-                Work</a></li>
-            <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Services</a>
-            </li>
-            <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Work
-                Gallery</a></li>
-          </ul>
+        <div class="mt-12 border-t border-white pt-4 text-center">
+          <p>2025 COPYRIGHT REFLEX RENOVATION . TOUS DROITS RÉSERVÉS</p>
         </div>
-        <div class="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4" style="margin-bottom: 3rem;">
-          <h2 class="text-xl font-bold mb-4">Stay Tuned With Us</h2>
-          <ul>
-            <li class="mb-2 font-light"><i class="fas fa-map-marker-alt mr-2"></i>Casablanca-Morocco</li>
-            <li class="mb-2 font-light"><i class="fas fa-envelope mr-2"></i>Hello@Email.com</li>
-            <li class="mb-2 font-light"><i class="fas fa-phone mr-2"></i>07 000000000</li>
-          </ul>
-        </div>
-      </div>
-      <div class="mt-12 border-t border-white pt-4 text-center">
-        <p>2025 COPYRIGHT REFLEX RENOVATION . TOUS DROITS RÉSERVÉS</p>
-      </div>
-    </footer>
-
+      </footer>
+      
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+          document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    
+        function toggleFaq(button) {
+          const faqContent = button.nextElementSibling;
+          faqContent.classList.toggle('hidden');  
+          button.querySelector('svg').classList.toggle('rotate-180');
+        }
+    
+    
+      
+    
+        
+      </script>
 </body>
 </html>
