@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Reflex Renovation</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .interest-label input:checked + span {
-            background-color: white;
-            color: #0a192f;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Reflex Renovation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .interest-label input:checked+span {
+      background-color: white;
+      color: #0a192f;
+    }
+  </style>
 </head>
+
 <body class="bg-gray-100">
-    
+
   <!-- Header -->
   <header class="bg-[#1C768F] text-white">
     <div class="container mx-auto flex justify-between items-center py-4 px-12">
@@ -73,7 +75,8 @@
           <a class="text-gray-700 hover:text-gray-900" href="#nousrealisation">Nos Réalisations</a>
           <a class="text-gray-700 hover:text-gray-900" href="#competance">Nos Compétences</a>
           <a class="text-gray-700 hover:text-gray-900" href="blog.html">Blog</a>
-          <a class="bg-[#FA991C] w-full text-center rounded-md mx-auto  text-white px-4 py-2 fira inline-block" href="form.html">demander un devis</a>
+          <a class="bg-[#FA991C] w-full text-center rounded-md mx-auto  text-white px-4 py-2 fira inline-block"
+            href="form.html">demander un devis</a>
         </div>
       </div>
     </div>
@@ -84,142 +87,177 @@
   <div class="w-full flex flex-col-reverse md:flex-row">
     <!-- Map Section -->
     <div class="w-full md:w-1/2 min-h-full bg-white shadow-lg">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11547.417298078186!2d1.504556!3d43.6511991!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aea294705b561b%3A0x57cd832c89207a2f!2sReflex%20Renovation!5e0!3m2!1sen!2sma!4v1743034519433!5m2!1sen!2sma"
-            width="100%" 
-            height="100%" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy">
-        </iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11547.417298078186!2d1.504556!3d43.6511991!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aea294705b561b%3A0x57cd832c89207a2f!2sReflex%20Renovation!5e0!3m2!1sen!2sma!4v1743034519433!5m2!1sen!2sma"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
     </div>
 
     <!-- Contact Form Section -->
     <div class="w-full md:w-1/2 bg-[#0a192f] text-white p-8">
-        <h2 class="text-xl font-bold mb-6 text-[#ffa500]">CONTACT</h2>
-        <h3 class="text-lg mb-4">DEMANDEZ VOTRE DEVIS TRAVAUX DÈS MAINTENANT !</h3>
-        
-        <form id="contactForm" action="https://formspree.io/f/xwplbdpq" method="POST" class="space-y-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <input type="text" name="name" placeholder="Nom Complet*" class="w-full p-3 bg-white text-black" required>
-                <input type="tel" name="phone" placeholder="Numéro de téléphone*" class="w-full p-3 bg-white text-black" pattern="[0-9]+" required>
-            </div>
+      <h2 class="text-xl font-bold mb-6 text-[#ffa500]">CONTACT</h2>
+      <h3 class="text-lg mb-4">DEMANDEZ VOTRE DEVIS TRAVAUX DÈS MAINTENANT !</h3>
+
+      <form id="contactForm" action="https://submit-form.com/nipdaJ8ku" method="POST" class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" name="name" placeholder="Nom Complet*" class="w-full p-3 bg-white text-black" required>
+          <input type="tel" name="phone" placeholder="Numéro de téléphone*" class="w-full p-3 bg-white text-black"
+            pattern="[0-9]+" required>
             
-            <input type="email" name="email" placeholder="Email*" class="w-full p-3 bg-white text-black" required>
-            
-            <div class="space-y-2">
-                <p class="font-semibold">JE SUIS INTÉRESSÉ PAR:</p>
-                <div class="flex flex-wrap gap-2">
+        </div>
 
- 
-                  <label class="relative interest-label">
+        <input type="email" name="email" placeholder="Email*" class="w-full p-3 bg-white text-black" required>
 
-                      <input type="radio" name="interest" value="Salle De Bain" class="absolute opacity-0 w-full h-full cursor-pointer peer" required>
-
-                      <input type="checkbox" name="interests[]" value="Salle De Bain" class="absolute opacity-0 w-full h-full cursor-pointer peer">
-
-                      <span class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Salle De Bain</span>
-
-                  </label>
-
-                  <label class="relative interest-label">
-
-                      <input type="radio" name="interest" value="Cuisine" class="absolute opacity-0 w-full h-full cursor-pointer peer">
-
-                      <input type="checkbox" name="interests[]" value="Cuisine" class="absolute opacity-0 w-full h-full cursor-pointer peer">
-
-                      <span class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Cuisine</span>
-
-                  </label>
-
-                  <label class="relative interest-label">
-
-                      <input type="radio" name="interest" value="Isolation" class="absolute opacity-0 w-full h-full cursor-pointer peer">
-
-                      <input type="checkbox" name="interests[]" value="Isolation" class="absolute opacity-0 w-full h-full cursor-pointer peer">
-
-                      <span class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Isolation</span>
-
-                  </label>
-
-              </div>
-
-              <div class="flex flex-wrap gap-2">
-
-                  <label class="relative interest-label">
-
-                      <input type="radio" name="interest" value="Gros Oeuvre" class="absolute opacity-0 w-full h-full cursor-pointer peer">
-
-                      <input type="checkbox" name="interests[]" value="Gros Oeuvre" class="absolute opacity-0 w-full h-full cursor-pointer peer">
-
-                      <span class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Gros Oeuvre (Extension, Construction, Piscine...)</span>
-
-                  </label>
-
-              </div>
-
-              <div class="flex flex-wrap gap-2">
-
-                  <label class="relative interest-label">
+        <div class="space-y-2">
+          <p class="font-semibold">JE SUIS INTÉRESSÉ PAR:</p>
+          <div class="flex flex-wrap gap-2">
 
 
-                      <input type="radio" name="interest" value="Rénovation Intérieure" class="absolute opacity-0 w-full h-full cursor-pointer peer">
+            <label class="relative interest-label">
 
 
-                      <input type="checkbox" name="interests[]" value="Rénovation Intérieure" class="absolute opacity-0 w-full h-full cursor-pointer peer">
-
-                      <span class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Rénovation Intérieure (Placo, Peinture, Parquet, Electricité, Carrelage...)</span>
-
-                  </label>
-
-              </div>
-
-              <div class="flex flex-wrap gap-2">
-
-                  <label class="relative interest-label">
+              <input type="radio" name="interest" value="Salle De Bain"
+                class="absolute opacity-0 w-full h-full cursor-pointer peer" >
 
 
-                      <input type="radio" name="interest" value="Rénovation Extérieure" class="absolute opacity-0 w-full h-full cursor-pointer peer">
+              <input type="checkbox" name="interests[]" value="Salle De Bain"
+                class="absolute opacity-0 w-full h-full cursor-pointer peer">
+
+              <span
+                class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Salle
+                De Bain</span>
+
+            </label>
+
+            <label class="relative interest-label">
 
 
-                      <input type="checkbox" name="interests[]" value="Rénovation Extérieure" class="absolute opacity-0 w-full h-full cursor-pointer peer">
+              <input type="radio" name="interest" value="Cuisine"
+                class="absolute opacity-0 w-full h-full cursor-pointer peer">
 
-                      <span class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Rénovation Extérieure (Terrasse, Pergola, Façade, Jardin, Menuiserie...)</span>
 
-                  </label>
+              <input type="checkbox" name="interests[]" value="Cuisine"
+                class="absolute opacity-0 w-full h-full cursor-pointer peer">
 
-              </div>
+              <span
+                class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Cuisine</span>
 
-              <div class="flex flex-wrap gap-2">
+            </label>
 
-                  <label class="relative interest-label">
+            <label class="relative interest-label">
 
-                      <input type="radio" name="interest" value="Autres Types De Travaux" class="absolute opacity-0 w-full h-full cursor-pointer peer">
 
-                      <input type="checkbox" name="interests[]" value="Autres Types De Travaux" class="absolute opacity-0 w-full h-full cursor-pointer peer">
+              <input type="radio" name="interest" value="Isolation"
+                class="absolute opacity-0 w-full h-full cursor-pointer peer">
 
-                      <span class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Autres Types De Travaux...</span>
 
-                  </label>
+              <input type="checkbox" name="interests[]" value="Isolation"
+                class="absolute opacity-0 w-full h-full cursor-pointer peer">
 
-              </div>
-            </div>
+              <span
+                class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Isolation</span>
 
-            <textarea name="message" placeholder="Votre message*" class="w-full p-3 bg-white text-black h-32" required></textarea>
-            
-            <p id="form-status" class="text-green-400 mb-2 hidden"></p>
+            </label>
 
-            <button type="submit" class="bg-[#FA991C] text-white px-6 py-3 hover:bg-[#e88b0c] transition" id="submitButton">
-                Envoyer
-            </button>
-        </form>
+          </div>
 
-        <script>
+          <div class="flex flex-wrap gap-2">
+
+            <label class="relative interest-label">
+
+
+              <input type="radio" name="interest" value="Gros Oeuvre"
+                class="absolute opacity-0 w-full h-full cursor-pointer peer">
+
+
+              <input type="checkbox" name="interests[]" value="Gros Oeuvre"
+                class="absolute opacity-0 w-full h-full cursor-pointer peer">
+
+              <span
+                class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Gros
+                Oeuvre (Extension, Construction, Piscine...)</span>
+
+            </label>
+
+          </div>
+
+          <div class="flex flex-wrap gap-2">
+
+            <label class="relative interest-label">
+
+
+              <input type="radio" name="interest" value="Rénovation Intérieure"
+                class="absolute opacity-0 w-full h-full cursor-pointer peer">
+
+
+              <input type="checkbox" name="interests[]" value="Rénovation Intérieure"
+                class="absolute opacity-0 w-full h-full cursor-pointer peer">
+
+              <span
+                class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Rénovation
+                Intérieure (Placo, Peinture, Parquet, Electricité, Carrelage...)</span>
+
+            </label>
+
+          </div>
+
+          <div class="flex flex-wrap gap-2">
+
+            <label class="relative interest-label">
+
+
+              <input type="radio" name="interest" value="Rénovation Extérieure"
+                class="absolute opacity-0 w-full h-full cursor-pointer peer">
+
+
+              <input type="checkbox" name="interests[]" value="Rénovation Extérieure"
+                class="absolute opacity-0 w-full h-full cursor-pointer peer">
+
+              <span
+                class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Rénovation
+                Extérieure (Terrasse, Pergola, Façade, Jardin, Menuiserie...)</span>
+
+            </label>
+
+          </div>
+
+          <div class="flex flex-wrap gap-2">
+
+            <label class="relative interest-label">
+
+
+              <input type="radio" name="interest" value="Autres Types De Travaux"
+                class="absolute opacity-0 w-full h-full cursor-pointer peer">
+
+
+              <input type="checkbox" name="interests[]" value="Autres Types De Travaux"
+                class="absolute opacity-0 w-full h-full cursor-pointer peer">
+
+              <span
+                class="px-4 py-2 border border-white hover:bg-white hover:text-[#0a192f] transition inline-block cursor-pointer">Autres
+                Types De Travaux...</span>
+
+            </label>
+
+          </div>
+        </div>
+
+        <textarea name="message" placeholder="Votre message*" class="w-full p-3 bg-white text-black h-32"
+          required></textarea>
+
+        <p id="form-status" class="text-green-400 mb-2 hidden"></p>
+
+        <button type="submit" class="bg-[#FA991C] text-white px-6 py-3 hover:bg-[#e88b0c] transition" id="submitButton">
+          Envoyer
+        </button>
+      </form>
+
+      <script>
         function validateForm() {
             const form = document.getElementById('contactForm');
             const phone = form.querySelector('input[name="phone"]');
             
-            const phoneRegex = /^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$/;
+            const phoneRegex = /^\d{9,}$/;
             if (!phoneRegex.test(phone.value)) {
                 alert('Veuillez entrer un numéro de téléphone valide');
                 return false;
@@ -242,12 +280,25 @@
             submitButton.disabled = true;
             submitButton.innerHTML = 'Envoi en cours...';
 
-            var data = new FormData(event.target);
+            var formData = new FormData(event.target);
+            var data = {};
+            
+            // Handle regular form fields
+            for (let [key, value] of formData.entries()) {
+                if (key !== 'interests[]') {
+                    data[key] = value;
+                }
+            }
+            
+            // Handle multiple interests as comma-separated string
+            data.interest = formData.getAll('interests[]').join(', ');
+            
             fetch(event.target.action, {
                 method: form.method,
-                body: data,
+                body: JSON.stringify(data),
                 headers: {
-                    'Accept': 'application/json'
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
                 }
             }).then(response => {
                 if (response.ok) {
@@ -282,68 +333,73 @@
         form.addEventListener("submit", handleSubmit);
         </script>
     </div>
-</div>
-    
-    <footer class="w-full py-12 px-4 bg-[#1C768F] text-white fira">
-        <div
-          class="max-w-7xl mx-auto flex flex-col md:flex-row md:flex-wrap justify-between items-start px-4">
-          <div class="mb-8 md:mb-0 p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-            <h1 class="text-5xl font-bold mb-4">Logo</h1>
-            <p class="text-xl font-semibold mb-4">Création Garage En Bois À Montauban</p>
-            <div class="flex space-x-3 items-start w-12 sm:w-14 md:w-10">
-              <img class="rounded-full bg-white p-1" src="logo acridite/1.png" alt="logo acridite">
-              <img class="rounded-full bg-white p-1" src="logo acridite/2.png" alt="logo acridite">
-              <img class="rounded-full bg-white p-1" src="logo acridite/3.png" alt="logo acridite">
-              <img class="rounded-full bg-white p-1" src="logo acridite/4.png" alt="logo acridite">
-    
-            </div>
-          </div>
-    
-          <div class="mb-8 md:mb-0 p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-            <h2 class="text-xl font-bold mb-4">Quick Links</h2>
-            <ul>
-              <li class="mb-2"><a href="index.html" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Home</a>
-              </li>
-              <li class="mb-2"><a href="#about" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>About Us</a>
-              </li>
-              <li class="mb-2"><a href="#nousrealisation" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Nos Réalisations</a></li>
-              <li class="mb-2"><a href="#competance" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Nos Compétences</a>
-              </li>
-              <li class="mb-2"><a href="blog.html" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Blog</a></li>
-            </ul>
-          </div>
-          <div class="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4" style="margin-bottom: 3rem;">
-            <h2 class="text-xl font-bold mb-4">Stay Tuned With Us</h2>
-            <ul>
-              <li class="mb-2 font-light"><i class="fas fa-map-marker-alt mr-2"></i>Casablanca-Morocco</li>
-              <li class="mb-2 font-light"><i class="fas fa-envelope mr-2"></i>reflexrenovation@sfr.fr</li>
-              <li class="mb-2 font-light"><i class="fas fa-phone mr-2"></i>+33768646789</li>
-            </ul>
-    
-            <div class="flex space-x-4 mt-4">
-              <a href="#" class="text-white text-2xl"><i class="fab fa-facebook"></i></a>
-              <a href="#" class="text-white text-2xl"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="text-white text-2xl"><i class="fab fa-linkedin"></i></a>
-            </div>
-    
-          </div>
+  </div>
+
+  <footer class="w-full py-12 px-4 bg-[#1C768F] text-white fira">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:flex-wrap justify-between items-start px-4">
+      <div class="mb-8 md:mb-0 p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+        <h1 class="text-5xl font-bold mb-4">Logo</h1>
+        <p class="text-xl font-semibold mb-4">Création Garage En Bois À Montauban</p>
+        <div class="flex space-x-3 items-start w-12 sm:w-14 md:w-10">
+          <img class="rounded-full bg-white p-1" src="logo acridite/1.png" alt="logo acridite">
+          <img class="rounded-full bg-white p-1" src="logo acridite/2.png" alt="logo acridite">
+          <img class="rounded-full bg-white p-1" src="logo acridite/3.png" alt="logo acridite">
+          <img class="rounded-full bg-white p-1" src="logo acridite/4.png" alt="logo acridite">
+
         </div>
-        <div class="mt-12 border-t border-white pt-4 text-center">
-          <p>2025 COPYRIGHT REFLEX RENOVATION . TOUS DROITS RÉSERVÉS</p>
+      </div>
+
+      <div class="mb-8 md:mb-0 p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+        <h2 class="text-xl font-bold mb-4">Quick Links</h2>
+        <ul>
+          <li class="mb-2"><a href="index.html" class="text-white font-light"><i
+                class="fas fa-caret-right mr-2"></i>Home</a>
+          </li>
+          <li class="mb-2"><a href="#about" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>About
+              Us</a>
+          </li>
+          <li class="mb-2"><a href="#nousrealisation" class="text-white font-light"><i
+                class="fas fa-caret-right mr-2"></i>Nos Réalisations</a></li>
+          <li class="mb-2"><a href="#competance" class="text-white font-light"><i
+                class="fas fa-caret-right mr-2"></i>Nos Compétences</a>
+          </li>
+          <li class="mb-2"><a href="blog.html" class="text-white font-light"><i
+                class="fas fa-caret-right mr-2"></i>Blog</a></li>
+        </ul>
+      </div>
+      <div class="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4" style="margin-bottom: 3rem;">
+        <h2 class="text-xl font-bold mb-4">Stay Tuned With Us</h2>
+        <ul>
+          <li class="mb-2 font-light"><i class="fas fa-map-marker-alt mr-2"></i>Casablanca-Morocco</li>
+          <li class="mb-2 font-light"><i class="fas fa-envelope mr-2"></i>Hello@Email.com</li>
+          <li class="mb-2 font-light"><i class="fas fa-phone mr-2"></i>07 000000000</li>
+        </ul>
+
+        <div class="flex space-x-4 mt-4">
+          <a href="#" class="text-white text-2xl"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-white text-2xl"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white text-2xl"><i class="fab fa-linkedin"></i></a>
         </div>
-      </footer>
-      
-    <script>
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-button').addEventListener('click', function () {
-          document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-    
-        function toggleFaq(button) {
-          const faqContent = button.nextElementSibling;
-          faqContent.classList.toggle('hidden');  
-          button.querySelector('svg').classList.toggle('rotate-180');
-        }
-      </script>
+
+      </div>
+    </div>
+    <div class="mt-12 border-t border-white pt-4 text-center">
+      <p>2025 COPYRIGHT REFLEX RENOVATION . TOUS DROITS RÉSERVÉS</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobile-menu-button').addEventListener('click', function () {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    function toggleFaq(button) {
+      const faqContent = button.nextElementSibling;
+      faqContent.classList.toggle('hidden');
+      button.querySelector('svg').classList.toggle('rotate-180');
+    }
+  </script>
 </body>
+
 </html>
