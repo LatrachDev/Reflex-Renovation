@@ -147,103 +147,56 @@
   </nav>
 
 
-<!-- Blog Section -->
-<section id="blog" class="py-16">
-  <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold mb-12 text-gray-800 fira">Blog</h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-1 gap-8">
-          <!-- Blog Post -->
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
-              <img src="https://picsum.photos/id/237/600/400" alt="High Converting Keywords" class="w-full h-64 object-cover">
-              <div class="p-6">
-                  <h3 class="text-2xl font-bold text-gray-800 mb-3">How To Find High Converting Keywords (And Create Content That Drives Traffic)</h3>
-                  <p class="text-gray-600 mb-4 short-text">
-                      Looking to tap into search terms that drive action? High converting keywords can connect you with your audience right when they're ready to take the next step...
-                  </p>
-                  <p class="text-gray-600 mb-4 full-text hidden">
-                      Looking to tap into search terms that drive action? High converting keywords can connect you with your audience right when they're ready to take the next step—whether that's booking a demo, subscribing to your newsletter, or making a purchase. Learn how to identify these powerful keywords and craft content that engages and converts your audience effectively.
-                      Looking to tap into search terms that drive action? High converting keywords can connect you with your audience right when they're ready to take the next step—whether that's booking a demo, subscribing to your newsletter, or making a purchase. Learn how to identify these powerful keywords and craft content that engages and converts your audience effectively.
-                      Looking to tap into search terms that drive action? High converting keywords can connect you with your audience right when they're ready to take the next step—whether that's booking a demo, subscribing to your newsletter, or making a purchase. Learn how to identify these powerful keywords and craft content that engages and converts your audience effectively.
-                      Looking to tap into search terms that drive action? High converting keywords can connect you with your audience right when they're ready to take the next step—whether that's booking a demo, subscribing to your newsletter, or making a purchase. Learn how to identify these powerful keywords and craft content that engages and converts your audience effectively.
-                      Looking to tap into search terms that drive action? High converting keywords can connect you with your audience right when they're ready to take the next step—whether that's booking a demo, subscribing to your newsletter, or making a purchase. Learn how to identify these powerful keywords and craft content that engages and converts your audience effectively.
-                      Looking to tap into search terms that drive action? High converting keywords can connect you with your audience right when they're ready to take the next step—whether that's booking a demo, subscribing to your newsletter, or making a purchase. Learn how to identify these powerful keywords and craft content that engages and converts your audience effectively.
-                      Looking to tap into search terms that drive action? High converting keywords can connect you with your audience right when they're ready to take the next step—whether that's booking a demo, subscribing to your newsletter, or making a purchase. Learn how to identify these powerful keywords and craft content that engages and converts your audience effectively.
-                  </p>
-                  <button class="toggle-button inline-block text-[#FA991C] font-bold fira">READ MORE »</button>
-                  <div class="mt-4 pt-4 border-t border-gray-200 flex items-center text-sm text-gray-500">
-                      <span>IMAD GUEMMAH</span>
-                      <span class="mx-2">|</span>
-                      <span>18 SEPTEMBER 2024</span>
-                  </div>
-              </div>
-          </div>
+
+  <footer class="w-full py-12 px-4 bg-[#1C768F] text-white fira">
+    <div
+      class="max-w-7xl mx-auto flex flex-col md:flex-row md:flex-wrap justify-between items-start px-4">
+      <div class="mb-8 md:mb-0 p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+        <h1 class="text-5xl font-bold mb-4">Logo</h1>
+        <p class="text-xl font-semibold mb-4">Création Garage En Bois À Montauban</p>
+        <div class="flex space-x-3 items-start w-10 lg:w-16">
+          <img src="logo acridite/1.png" alt="logo acridite">
+          <img src="logo acridite/2.png" alt="logo acridite">
+          <img src="logo acridite/3.png" alt="logo acridite">
+          <img src="logo acridite/4.png" alt="logo acridite">
+
+        </div>
       </div>
-  </div>
-</section>
 
-<script>
-  document.querySelectorAll(".toggle-button").forEach(button => {
-      button.addEventListener("click", function () {
-          const shortText = this.previousElementSibling.previousElementSibling;
-          const fullText = this.previousElementSibling;
-          
-          if (fullText.classList.contains("hidden")) {
-              fullText.classList.remove("hidden");
-              shortText.classList.add("hidden");
-              this.textContent = "READ LESS «";
-          } else {
-              fullText.classList.add("hidden");
-              shortText.classList.remove("hidden");
-              this.textContent = "READ MORE »";
-          }
-      });
-  });
-</script>
+      <div class="mb-8 md:mb-0 p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+        <h2 class="text-xl font-bold mb-4">Quick Links</h2>
+        <ul>
+          <li class="mb-2"><a href="index.html" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Home</a>
+          </li>
+          <li class="mb-2"><a href="#about" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>About Us</a>
+          </li>
+          <li class="mb-2"><a href="#nousrealisation" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Nos Réalisations</a></li>
+          <li class="mb-2"><a href="#competance" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Nos Compétences</a>
+          </li>
+          <li class="mb-2"><a href="blog.html" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Blog</a></li>
+        </ul>
+      </div>
+      <div class="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4" style="margin-bottom: 3rem;">
+        <h2 class="text-xl font-bold mb-4">Stay Tuned With Us</h2>
+        <ul>
+          <li class="mb-2 font-light"><i class="fas fa-map-marker-alt mr-2"></i>Casablanca-Morocco</li>
+          <li class="mb-2 font-light"><i class="fas fa-envelope mr-2"></i>Hello@Email.com</li>
+          <li class="mb-2 font-light"><i class="fas fa-phone mr-2"></i>07 000000000</li>
+        </ul>
 
+        <div class="flex space-x-4 mt-4">
+          <a href="#" class="text-white text-2xl"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-white text-2xl"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white text-2xl"><i class="fab fa-linkedin"></i></a>
+        </div>
 
-
-<footer class="w-full py-12 px-4 bg-[#1C768F] text-white fira">
-  <div
-    class="max-w-7xl mx-auto flex flex-col md:flex-row md:flex-wrap justify-between items-start md:items-center px-4">
-    <div class="mb-8 md:mb-0 p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-      <h1 class="text-5xl font-bold mb-4">Logo</h1>
-      <p class="text-xl font-semibold mb-4">Création Garage En Bois À Montauban</p>
-      <div class="flex space-x-4">
-        <a href="#" class="text-white text-2xl"><i class="fab fa-facebook"></i></a>
-        <a href="#" class="text-white text-2xl"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="text-white text-2xl"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="text-white text-2xl"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
-    <div class="mb-8 md:mb-0 p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-      <h2 class="text-xl font-bold mb-4">Quick Links</h2>
-      <ul>
-        <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Home</a>
-        </li>
-        <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>About Us</a>
-        </li>
-        <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Our Team
-            Work</a></li>
-        <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Services</a>
-        </li>
-        <li class="mb-2"><a href="#" class="text-white font-light"><i class="fas fa-caret-right mr-2"></i>Work
-            Gallery</a></li>
-      </ul>
+    <div class="mt-12 border-t border-white pt-4 text-center">
+      <p>2025 COPYRIGHT REFLEX RENOVATION . TOUS DROITS RÉSERVÉS</p>
     </div>
-    <div class="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4" style="margin-bottom: 3rem;">
-      <h2 class="text-xl font-bold mb-4">Stay Tuned With Us</h2>
-      <ul>
-        <li class="mb-2 font-light"><i class="fas fa-map-marker-alt mr-2"></i>Casablanca-Morocco</li>
-        <li class="mb-2 font-light"><i class="fas fa-envelope mr-2"></i>Hello@Email.com</li>
-        <li class="mb-2 font-light"><i class="fas fa-phone mr-2"></i>07 000000000</li>
-      </ul>
-    </div>
-  </div>
-  <div class="mt-12 border-t border-white pt-4 text-center">
-    <p>2025 COPYRIGHT REFLEX RENOVATION . TOUS DROITS RÉSERVÉS</p>
-  </div>
-</footer>
+  </footer>
 
 
 
