@@ -1,17 +1,87 @@
-<!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Reflex Renovation</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>
+    Web Page
+  </title>
+  <!-- <script src="https://cdn.tailwindcss.com">
+    </script> -->
+  <script src="JavaScript/tailwind.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   <style>
     .interest-label input:checked+span {
       background-color: white;
       color: #0a192f;
     }
+    
+    .fira {
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 12;
+    }
+
+    section {
+      background-color: #FBF3F2;
+      margin: 0;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    body {
+      background-color: #FBF3F2;
+    }
+
+    .swiper-wrapper {
+      width: 100%;
+      height: max-content !important;
+      padding-bottom: 64px !important;
+      -webkit-transition-timing-function: linear !important;
+      transition-timing-function: linear !important;
+      position: relative;
+    }
+
+    .swiper-slide .overlay {
+      transform: translateY(100%);
+      transition: transform 0.3s ease-in-out;
+      opacity: 0;
+    }
+
+    .swiper-slide:hover .overlay {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* Remove default Swiper button arrows */
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      display: none;
+    }
+
+    /* Styling for disabled navigation buttons */
+    .disabled_swiper_button {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    .hidden {
+        display: none;
+    }
   </style>
+
 </head>
 
 <body class="bg-gray-100">
@@ -44,7 +114,7 @@
     <div class="container mx-auto px-12 py-4">
       <div class="flex items-center justify-between">
         <a href="index.html" class="flex items-center">
-          <img alt="Logo" class="h-12" height="50" src="" width="100">
+          <img alt="Logo" class="w-24" src="images/logo-RR.png">
         </a>
 
         <!-- Mobile & Tablet menu button -->
@@ -57,13 +127,14 @@
         </div>
 
         <!-- Desktop Navigation -->
-        <div class="hidden lg:flex items-center space-x-8">
-          <a class="text-gray-700 hover:text-gray-900" href="index.html">Accueil</a>
-          <a class="text-gray-700 hover:text-gray-900" href="#quinous">Qui Sommes Nous</a>
-          <a class="text-gray-700 hover:text-gray-900" href="#nousrealisation">Nos Réalisations</a>
-          <a class="text-gray-700 hover:text-gray-900" href="#competance">Nos Compétences</a>
-          <a class="text-gray-700 hover:text-gray-900" href="blog.html">Blog</a>
+        <div class="hidden lg:flex items-center space-x-8 font-semibold">
+          <a class="text-gray-700 hover:text-gray-900 border-b-2 border-transparent hover:border-gray-900 transition duration-300" href="index.html">Accueil</a>
+          <a class="text-gray-700 hover:text-gray-900 border-b-2 border-transparent hover:border-gray-900 transition duration-300" href="#quinous">Qui Sommes Nous</a>
+          <a class="text-gray-700 hover:text-gray-900 border-b-2 border-transparent hover:border-gray-900 transition duration-300" href="#nousrealisation">Nos Réalisations</a>
+          <a class="text-gray-700 hover:text-gray-900 border-b-2 border-transparent hover:border-gray-900 transition duration-300" href="#competance">Nos Compétences</a>
+          <a class="text-gray-700 hover:text-gray-900 border-b-2 border-transparent hover:border-gray-900 transition duration-300" href="blog.html">Blog</a>
         </div>
+        
         <a class="bg-[#FA991C] text-white px-4 py-2 fira hidden lg:block" href="form.html">demander un devis</a>
       </div>
 
@@ -81,7 +152,6 @@
       </div>
     </div>
   </nav>
-
 
 
   <div class="w-full flex flex-col-reverse md:flex-row">
@@ -340,11 +410,11 @@
       <div class="mb-8 md:mb-0 p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
         <h1 class="text-5xl font-bold mb-4">Logo</h1>
         <p class="text-xl font-semibold mb-4">Création Garage En Bois À Montauban</p>
-        <div class="flex space-x-3 items-start w-12 sm:w-14 md:w-10">
-          <img class="rounded-full bg-white p-1" src="logo acridite/1.png" alt="logo acridite">
-          <img class="rounded-full bg-white p-1" src="logo acridite/2.png" alt="logo acridite">
-          <img class="rounded-full bg-white p-1" src="logo acridite/3.png" alt="logo acridite">
-          <img class="rounded-full bg-white p-1" src="logo acridite/4.png" alt="logo acridite">
+        <div class="flex space-x-3 items-start w-10 lg:w-16">
+          <img src="logo acridite/1.png" alt="logo acridite">
+          <img src="logo acridite/2.png" alt="logo acridite">
+          <img src="logo acridite/3.png" alt="logo acridite">
+          <img src="logo acridite/4.png" alt="logo acridite">
 
         </div>
       </div>
@@ -370,9 +440,9 @@
       <div class="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4" style="margin-bottom: 3rem;">
         <h2 class="text-xl font-bold mb-4">Stay Tuned With Us</h2>
         <ul>
-          <li class="mb-2 font-light"><i class="fas fa-map-marker-alt mr-2"></i>Casablanca-Morocco</li>
+          <li class="mb-2 font-light"><i class="fas fa-map-marker-alt mr-2"></i>5 Rue Jean Perrin, 31240 Saint-Jean, France</li>
           <li class="mb-2 font-light"><i class="fas fa-envelope mr-2"></i>Hello@Email.com</li>
-          <li class="mb-2 font-light"><i class="fas fa-phone mr-2"></i>07 000000000</li>
+          <li class="mb-2 font-light"><i class="fas fa-phone mr-2"></i>+33 7 68 64 67 89</li>
         </ul>
 
         <div class="flex space-x-4 mt-4">
@@ -384,7 +454,7 @@
       </div>
     </div>
     <div class="mt-12 border-t border-white pt-4 text-center">
-      <p>2025 COPYRIGHT REFLEX RENOVATION . TOUS DROITS RÉSERVÉS</p>
+      <p>&copy 2025 COPYRIGHT REFLEX RENOVATION . TOUS DROITS RÉSERVÉS</p>
     </div>
   </footer>
 
